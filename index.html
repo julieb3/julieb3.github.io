@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Juliette Bricker | Toronto & Saskatoon Based Designer</title>
+    <link rel="icon" href="icons/favicon.png">
+    <link href="https://fast.fonts.net/cssapi/7b6fce8a-1d50-49d6-9271-b3b14a0ac385.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/processing.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/circletype.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        <nav>
+          <a href="index.html">
+            <h1 id="my-name">Juliette Bricker</h1>
+          </a>
+          <div id="nav-list">
+              <a href="index.html">≈work </a>
+              <a href="pages/about.html">~about</a>
+              <a href="pages/contact.html">@contact</a>
+              <a href="pages/resume.html">*resume</a>
+            </div>
+          <script>
+            new CircleType(document.getElementById('my-name'))
+              .dir(-1)
+              .radius(245);
+          </script>
+          <script>
+            new CircleType(document.getElementById('nav-list'))
+              .dir(-1)
+              .radius(260);
+          </script>
+        </nav>
+      </header>
+
+      <main>
+        <!-- <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+            <p class="opener">Hello! My Name’s Juliette and I'm a multidisciplinary Designer based in Toronto / Saskatoon. I believe good design is made with hard work and experimentation. I like to think I am a poly math for design with work in many fields.</p>
+          </div>
+        </div>
+
+        -->
+        <!-- Cards -->
+        <section>
+          <div class="row">
+            <h2 class="sect-title col-xs-12 end-xs">featured projects</h2>
+          </div>
+          <div class="row flexin cards center-lg">
+            <div class=" col-xs-12" >
+              <div class="monocard">
+                <a href="pages/stoon.html"><img src="cards/mystoon.png"  alt="Cover of magazine with black and white photo and a logo that says, Stoon" ></a>
+              </div>
+              <div class="hide">
+                <a href="pages/stoon.html">
+                  <div class="chunk"><h3>Stoon Magazine</h3>
+                  <h4>editorial design</h4>
+                  </div>
+                <img src="cards/mystoon-m.png"  alt="Cover of magazine with black and white photo and a logo that says, Stoon" ></a>
+              </div>
+            </div>
+
+            <div class=" col-xs-12" >
+              <div class="monocard">
+                <a href="pages/phad.html"><img src="cards/myphad.png"  alt="Cover of magazine with black and white photo and a logo that says, Stoon" ></a>
+              </div>
+              <div class="hide">
+                <a href="pages/phad.html">
+                  <div class="chunk"><h3>Phone Addiction</h3>
+                  <h4>information and interactive design</h4>
+                  </div>
+                <img src="cards/myphad-m.png"  alt="Cover of magazine with black and white photo and a logo that says, Stoon" ></a>
+              </div>
+            </div>
+
+            <div class=" col-xs-12" >
+              <div class="monocard">
+                <a href="pages/ichr.html"><img class="card"src="cards/myichr.png"  alt="Cover of magazine with black and white photo and a logo that says, Stoon" ></a>
+              </div>
+              <div class="hide">
+                <a href="pages/ichr.html">
+                  <div class="chunk"><h3>I Can Hardly Remember</h3>
+                  <h4>production design</h4>
+                  </div>
+                <img class="card" src="cards/myichr-m.png"  alt="Cover of magazine with black and white photo and a logo that says, Stoon" ></a>
+              </div>
+            </div>
+
+          </div>
+
+
+        </section>
+
+        <section>
+          <div class="row">
+            <h2 class="sect-title col-xs-12 end-xs"> more work</h2>
+          </div>
+    <!-- Mobile Slide through Cards -->
+    <div class="row">
+          <div class="mobile-only slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="slidepic" src="../images/sheep.png" >
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="slidepic" src="../images/doggy.png">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="slidepic" src="../images/koala.png">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <div class="mobile-only" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          </div>
+
+          <!-- Normal Cards -->
+          <div class="desktop-only">
+            <div class="row">
+
+            <div class="col-xs-3 col-md-3">
+              <img src="cards/friedt.png">
+              <button data-toggle="collapse" class="accordion details">Friedt Finishing</button>
+              <div class="panel">
+                <strong>Branding and Web Design</strong>
+                <p> Friedt Finishing is a cabinetry and millwork compan located in Saskatoon. After some change in business they we're looking for a new yet familliar brand identity. With a new logo the company felt it was time for a new website which will be released sometime in early 2021.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif"src="cards/blue.png">
+              <div class="hidden">
+                <img src="cards/blue.gif">
+              </div>
+              <button class="accordion details">Blue Faces</button>
+              <div class="panel">
+                <strong>Cover Design</strong>
+                <p>Sina is a small musician from Toronto who I worked with to create a cover for his latest single "Blue Faces". After disscusion with the artist I was able to create a visual representation of his atmospheric and wavy music through a cover and looping video for spotify.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/db.png">
+              <div class="hidden">
+                <img src="cards/db.gif">
+              </div>
+              <button class="accordion details">Dirty Buckets</button>
+              <div class="panel">
+                <strong>Small Business</strong>
+                <p>During the the summer of 2020 I started my own business where I marketed and sold bucket hats handmade by myself using second hand materials.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/shadow.png">
+              <div class="hidden">
+                <img src="cards/shadow.gif">
+              </div>
+              <button class="accordion details">A Speck in the Sea</button>
+              <div class="panel">
+                <strong>3D Shadowbox</strong>
+                <p>This 6 layer paper shadow box was a project I designed, cut, and assembled. It is an abstract cmposition inspired by my love of canoeing and Ray and Charles Eames' Film, Powers of Ten. </p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/shoe.png">
+              <div class="hidden">
+                <img src="cards/shoe.gif">
+              </div>
+              <button class="accordion details">Hidden High Heel</button>
+              <div class="panel">
+                <strong>3D Design</strong>
+                <p>In March of 2021 I was assigned a project which originally was meant to create a complex wearable paper object. Due to the lockdown I was able to design and build these shoes from found objects in my apartment. </p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/greens.png">
+              <button class="accordion details">Greenspace Infographic</button>
+              <div class="panel">
+                <strong>Information Design</strong>
+                <p>Inspired by Theo Deutinger’s ground breaking work in his book The Ultimate Atlas, I was inspired to use the space I had for this 11x 17 infographic print. I created a graph which compared the landspace of different post secondary campus' in Toronto and the percentage of greenspace within them. I wanted the graph to use up the space on the page so it could be visualized easier. I felt the calming purple and logical green would bring forth a theme of relaxation since being surrounded by nature is been proven to decrease negative thoughts and stress.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/dist.png">
+              <div class="hidden">
+                <img src="cards/dist.gif">
+              </div>
+              <button class="accordion details">Distracted Poster and Program</button>
+              <div class="panel">
+                <strong>Typography and Programming</strong>
+                <p>To create an expressive typographic poster I created a coded program in processing to create the structure and form for a print poster. Like always, I got carried away with coding and ended up with a colorful program with type in motion that was choreographed to music.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/cowboy.png">
+              <button class="accordion details">Urban Cowboy</button>
+              <div class="panel">
+                <strong>Typeface Design</strong>
+                <p>This is font is mashup of the typefaces Playbill, Texas Tango, and Monument Extended Bold. The new and bizarre urban country style of the song Old Town Road inspired me to find an old western font in the school library and combine it with a fresh typeface from pangram pangram foundry.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/ds.png">
+              <div class="hidden">
+                <img src="cards/ds.gif">
+              </div>
+              <button class="accordion details">Don't Settle</button>
+              <div class="panel">
+                <strong>Animation</strong>
+                <p>This was the original pitch for a logo identity for a motavational speaker. The client was drawn to bold type with distortion and the since the name was "Don't Settle" I pitched that the distortion could relate to unsettled water.
+                After some expirementation I created this animation by printing the normal logo and weighing down the paper in the bottom of a bath tub. I then (carefully) set up lights and shot a video on my phone parralell to the waters surface and recorded the water being disrupted by my hand. I then digitized it and used the frames to creat this looping animation.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/lettery.png">
+              <div class="hidden">
+                <img src="cards/lettery.gif">
+              </div>
+              <button class="accordion details">Tell Me Y</button>
+              <div class="panel">
+                <strong>Booklet</strong>
+                <p>This book was all about the letter Y! This book starts by looking at the history and form of the letter Y. It continues on to discuss the history of the YMCA along with an imagined advocate campaign this company could have.
+                It has a bold colours which include the red used by the YMCA and was printed on opal paper which was warm and bright much like the YMCA is.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/dog.png">
+              <div class="hidden">
+                <img src="cards/dog.gif">
+              </div>
+              <button class="accordion details">Dog House Graphic</button>
+              <div class="panel">
+                <strong>Educational Visualization</strong>
+                <p>This four image piece was created for the University of Saskatchewan's Sociology dept. It was made to represent a concept relating to the four stages of learning. This was the first thing I ever made on illustrator and like all new things I learn, I do my reserch and take my time to make something strong.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-3 col-md-3">
+              <img class="show-gif" src="cards/ap.png">
+              <div class="hidden">
+                <img src="cards/ap.gif">
+              </div>
+              <button class="accordion details">Advanced Art Portfolio</button>
+              <div class="panel">
+                <strong>Visual Art</strong>
+                <p>The 12 images in this portfolio are pastel drawings of my high school peers in a colection titles 'Innate Youth'. I created these pieces to express the emotional, naive, and natural states teens go through as they learn to become adults. It was my detailed work, strong theme, and impressionist inspiration that awarded me a score of 5 in the Advanced Placement Art Program.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+
+
+
+        </section>
+
+      </main>
+    </div>
+
+    <footer>
+      <div class="foot-content container-fluid">
+        <div class="row">
+          <div class="spotify col-xs-6 col-md-4">
+            <a href="https://open.spotify.com/playlist/3J7Vu9UyWV0valS7L3ZzuI?si=YxZl9WoYQ3qoyoGK7E5XbQ" target="_blank" rel="noopener noreferrer"><img src="images/spotify.png" alt="Spotify scan code" ></a>
+          </div>
+        </div>
+        <div class="foot-text row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+              <p>Want to talk or know more? Email me at</p>
+              <p class="contact-foot">juliette.bricker@gmail.com</p>
+          </div>
+        </div>
+        <div class="row flexin socials">
+          <a class="my-icon" href="https://www.linkedin.com/in/juliette-bricker-a51b43160/" target="_blank" rel="noopener noreferrer"><img src="icons/link.png" alt="Linkedin Link" ></a>
+          <a class="my-icon" href="https://the-dots.com/users/juliette-bricker-862649" target="_blank" rel="noopener noreferrer"><img src="icons/dots.png" alt="The Dots Link" ></a>
+          <a class="my-icon" href="https://www.instagram.com/juliette.bricker/" target="_blank" rel="noopener noreferrer"><img src="icons/insta.png" alt="Instagram link" ></a>
+          <p class="credit">© Juliette Bricker 2021</p>
+        </div>
+      </div>
+
+      <div class="colophon container-fluid">
+        <div class="c-drawer row middle-xs">
+          <img class="my-icon"src="icons/arrow-d.png" alt="Down arrow" >
+          <h3>Colophon</h3>
+        </div>
+      </div>
+
+    </footer>
+    <script src="js/scripts.js" defer></script>
+<!-- Processing Background -->
+    <div>
+      <script type="text/processing">
+        ArrayList <Particle> particles = new ArrayList<Particle>();//Generate new particles in a list
+        boolean cycle = true;
+        void setup() {
+          size(1000, 5000);
+          noStroke();
+          rectMode(CENTER);
+        }
+        void draw() {
+          background(255,255,255);
+          // continually add new particles
+          particles.add(new Particle());
+          for ( int i = 0; i< particles.size(); i++) {
+            if (particles.get(i).isAlive()==false) {
+              particles.remove(i);
+            }// remove particles after lifetime runs out
+            particles.get(i).display();
+            particles.get(i).move();//return a particle object
+          }
+        }
+        void mouseClicked(){
+          if( cycle == true){
+            cycle = false;
+          }
+          else{
+            cycle = true;
+          }
+        }
+        class Particle{
+          //Properties
+          PVector location;
+          PVector velocity;
+          int size;// dimensions AKA size of particle
+          boolean alive; // Boolean used to detect whether a particle is alive and if not remove it
+          float LIFETIME = random(10,600); // how many frames a particle lives
+          int steps;// counts frames
+          //Constructor
+          Particle(){
+            velocity = new PVector(random(-1,1), random(-1,1));
+            location = new PVector(random(0,width), random(0,height)); //location initialized
+            size = 20;
+            steps = 0;
+            alive = true;// when created the particle is alive
+          }
+          //Functions
+          void move(){
+            location.add(velocity);
+            steps++;// increase steps each time draw loops
+            if(steps> LIFETIME){// kill it when it hits life time
+              alive = false;
+            }
+          }
+          void display(){
+            // push and pop so rotation axis is in the middle of the square not the top corner
+            pushMatrix();
+            translate(location.x, location.y);
+            if (cycle == true){
+              fill(255,205,225,map(steps,0,LIFETIME,200,0));
+            }
+            else{
+              fill(255,205,120,map(steps,0,LIFETIME,200,0));
+            }
+
+            scale(map(steps,0,LIFETIME,0,2));
+            //rotate(radians(steps*2));// spin the degrees of steps times 2
+            ellipse(0,0,size,size);
+            popMatrix();
+          }
+
+          boolean isAlive(){
+            return alive;
+          }
+        }
+      </script>
+      <canvas id="sketch" ></canvas>
+    </div>
+  </body>
+</html>

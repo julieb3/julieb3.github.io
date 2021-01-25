@@ -1,0 +1,597 @@
+/* PORTFOLIO STYLE SHEET*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+
+/*BASICS*/
+	:root {
+		--basic-bold: 'Avenir LT W05_95 Black',sans-serif;
+		--basic-font: 'Avenir LT W05_85 Heavy',sans-serif;
+		--decor-font: 'Lazybones LT W05 Regular',serif;
+		--color-main: #FFCDE1; /* pink 255,205,225 */
+		--color-secondary: #FFCD78; /* orange 255,205,120   */
+		--color-background: #FFFAF0; /* cream 255,250,240 */
+	}
+
+	html{
+	  background-color: var(--color-background));
+	  color: var(--color-secondary);
+		font-family: var(--basic-font);
+	  font-size: 16px;
+	}
+	* {
+	    box-sizing: border-box;
+	}
+	p{
+		line-height: 1.5;
+		padding: 1rem 1rem;
+		font-family: var(--basic-font);
+	}
+	img{
+	  width: 100%;
+	  height: auto;
+	}
+	a {
+		color: var(--color-main);
+	}
+	section{
+		margin: 1rem 0;
+	}
+	.sect-title{
+		font-size: 1.5rem;
+		padding: 2rem 4rem 0 0;
+	}
+	.mobile-only {
+	  display: block;
+	}
+	.desktop-only {
+	  display: none;
+	}
+	.flexin{
+		display: flex;
+	}
+
+/*ACCORDIONS*/
+.accordion {
+  background-color: var(--color-main);
+  color: var(--color-background);
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  transition: 0.4s;
+	font-family: var(--basic-font);
+
+}
+.accordion:after {
+  content: "";
+  display: inline-block;
+  /* background-image: url('../icons/pink-arrow.svg'); */
+  background-size: 17px 7px;
+  width: 17px;
+  height: 7px;
+  float: right;
+  margin-top: 5px;
+  transform: rotate(180deg);
+
+}
+.accordion.active:after {
+  transform: rotate(0deg);
+}
+.active, .accordion:hover, .accordion:focus {
+  background-color: var(--color-secondary);
+	outline: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.panel {
+  padding: 1rem 9px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.details{
+  padding: 1rem;
+	margin: -3px 0 1rem 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+.show-gif:hover + .hidden {
+	display: block;
+	position: relative;
+	margin-top: -101.5%;
+}
+.hidden:hover {
+	display: block;
+	position: relative;
+	margin-top: -101.5%;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
+/*NAV*/
+	.highlight{
+		color: var(--color-main) !important;
+	}
+	h1{
+		color: var(--color-main);
+		font-family: var(--decor-font);
+	}
+	nav {
+		margin-top: 5vh;
+		margin-left: 50%;
+		position: relative;
+		display: block;
+	}
+	a{
+			color: var(--color-main);
+	}
+	a:hover {
+		color: var(--color-secondary);
+	}
+	#my-name{
+		color: var(--color-secondary);
+		font-size: 2rem;
+		font-family: var(--decor-font);
+		transform: rotate(-10deg);
+		letter-spacing: -2px;
+		/* transform-origin: center center; */
+	}
+
+	#nav-list{
+		font-size: 1.1rem;
+		font-family: var(--basic-bold);
+		font-weight: bold;
+		transform-origin: center center;
+		transform: rotate(-10deg);
+		margin-top: -20px;
+	}
+
+/*HOMEPAGE HERO*/
+	.mobile-hero{
+		margin-top: 20%;
+		position:relative;
+		z-index:1;
+		width: 100%;
+	}
+	.desktop-hero{
+		margin-top: 10%;
+		position:relative;
+		z-index:1;
+		width: 100%;
+	}
+
+.contact-me{
+	font-size: 24px;
+	margin: 100px 50px;
+	text-align:left;
+}
+/* ABOUT */
+	.about-pic{
+		margin: 0 0 0 0;
+	}
+
+
+	.about-title{
+		font-size: 1.5rem;
+		margin: 0 1rem;
+	}
+/*PAGES*/
+	.page-title{
+		font-size: 2rem;
+	}
+
+/*CARDS*/
+
+/* For Full Length Cards*/
+/* .bigcard{
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 1rem 0;
+}
+
+ .stoon{
+	background-image: url("../cards/mystoon.png");
+}
+.stoon:hover{
+  background-image: url("../cards/mystoon-m.png");
+}
+.phad{
+	background-image: url("../cards/myphad.png");
+}
+.phad:hover{
+  background-image: url("../cards/myphad-m.png");
+}
+.ichr{
+	background-image: url("../cards/myichr.png");
+}
+.ichr:hover{
+  background-image: url("../cards/myichr-m.png");
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+		.stoon{
+			background-image: url("../cards/mystoon2x.png");
+		}
+		.stoon:hover{
+		  background-image: url("../cards/mystoon-m2x.png");
+		}
+		.phad{
+			background-image: url("../cards/myphad2x.png");
+		}
+		.phad:hover{
+		  background-image: url("../cards/myphad-m2x.png");
+		}
+		.ichr{
+			background-image: url("../cards/myichr2x.png");
+		}
+		.ichr:hover{
+		  background-image: url("../cards/myichr-m2x.png");
+		}
+} */
+	/* For Circle Cards*/
+
+	.monocard{
+		height: 300px;
+		overflow:hidden;
+		margin: 1rem 0;
+	}
+
+	.monocard:hover + .hide {
+	  display: block;
+		position: relative;
+		margin: -316px 0 1rem 0;
+	}
+	.hide:hover {
+	  display: block;
+		position: relative;
+		margin: -316px 0 1rem 0;
+	}
+
+
+	.hide {
+		display: none;
+		height: 300px;
+		overflow: hidden;
+	}
+	.hide h3{
+		color: var(--color-background);
+		font-size: 3rem;
+	}
+	.chunk{
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+/*MINI CARDS*/
+	.baby-card{
+		background-color: var(--color-main);
+
+	}
+
+
+
+/*PROCESSING*/
+	#sketch{
+	left: 0px;
+	top: 0px;
+	z-index: -2;
+	border-color: rgb(255,250,240);
+	}
+
+	canvas {
+	    width: 100%;
+			height: viewport;
+	    margin: auto;
+	    display: block;
+			position: fixed;
+	}
+
+/*SLIDESHOW*/
+	.mySlides {display: none}
+	.slidepic{
+		vertical-align: middle;
+		width: 50%;
+		margin: 0 25%;
+		padding: 1rem 0;
+	}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  position: relative;
+		background-color: var(--color-secondary);
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 2rem;
+	  margin-top: -22px;
+	  color: var(--color-background);
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(255,205,225,0.8);
+	}
+
+	/* Caption text */
+	.text {
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: var(--color-main);
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: var(--color-secondary);
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .prev, .next,.text {font-size: 11px}
+	}
+
+
+/*TYPOGRAPHY*/
+	.opener{
+		font-size: 24px;
+		line-height: 1.5em;
+		margin-top: 100px;
+	}
+	.title{
+		font-size: 64px;
+		margin: 250px 0;
+		margin-left: 8%;
+	}
+
+
+
+/*FOOTER*/
+	footer{
+		color: var(--color-background);
+		font-size: 1rem;
+		line-height: 1rem;
+		position:relative;
+		z-index: auto;
+		height: 200px;
+		position: relative;
+		margin-top: 100px;
+	}
+	.foot-content{
+			background-color: var(--color-secondary);
+	}
+
+	.spotify{
+		margin-top: -5%;
+		margin-left: auto;
+	}
+	.foot-text{
+		padding: 2% 0 30px 15px;
+	}
+	.contact-foot{
+		font-family: var(--basic-bold);
+		margin-top: 10px;
+	}
+
+	.socials{
+		padding: 0 0 10px 15px;
+	}
+	.credit{
+		font-size: .8rem;
+		margin-left: auto;
+		padding: 19px 15px 0 0;
+	}
+
+	.colophon{
+		background-color: var(--color-main);
+	}
+	.c-drawer{
+		padding: 15px 0px 20px 15px;
+	}
+	.my-icon{
+		width: 40px;
+		height:auto;
+		padding: 0 5px 5px 5px;
+	}
+
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+	.title{
+		margin-left: 0;
+	}
+	section{
+		margin: 0 0;
+	}
+	p{
+		line-height: 1.5;
+		padding: 1rem 0;
+		font-family: var(--basic-font);
+	}
+
+	.contact-me{
+		font-size: 48px;
+	}
+
+	.about-pic{
+		margin: 50px 0 0 0;
+	}
+
+	.about-title{
+		font-size: 1.5rem;
+		margin: 3rem 0 1rem 0;
+	}
+
+
+/*TYPOGRAPHY*/
+.opener{
+	font-size: 24px;
+	line-height: 1.5em;
+	margin: 100px 0px 150px 0;
+
+}
+
+
+	#my-name{
+		font-size: 2rem;
+	}
+
+	#nav-list{
+		font-size: 1.1rem;
+		margin-top: -20px;
+		letter-spacing: -1px;
+		padding-left: 10px;
+	}
+
+	nav {
+		margin-top: 5vh;
+		margin-left: 200px;
+		position: relative;
+		z-index: 2;
+	}
+/*CARDS*/
+	.hide h3{
+		font-size: 1.5rem;
+	}
+	.card{
+		margin-top: -10%;
+	}
+	.monocard{
+		height: 500px;
+		overflow:hidden;
+		margin: 1rem 0;
+	}
+
+	.monocard:hover + .hide {
+		display: block;
+		position: relative;
+		margin: -516px 0 1rem 0;
+	}
+	.hide:hover {
+		display: block;
+		position: relative;
+		margin: -516px 0 1rem 0;
+	}
+
+
+	.hide {
+		display: none;
+		height: 500px;
+		overflow: hidden;
+	}
+	footer{
+		font-size: 2rem;
+		line-height: 2.2rem;
+	}
+}

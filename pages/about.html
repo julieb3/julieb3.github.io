@@ -52,100 +52,21 @@ SOURCES -->
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-5 about-body">
               <h2 class="about-title">About Me!</h2>
-              <p>Hi I'm Juliette. After being born and raised in Saskatoon, Saskatchewan I decided to venture off to the city of Toronto to attend the dedign program at York University and Sheridan College.
-              I have strong thirst for knowledge which has lead me learn about many different streams of design. My favoutire kinds of jobs involve difficult problem solving, hands on work, or imrpoving the world we live in.
+              <p>Hi I'm Juliette. After being born and raised in Saskatoon, Saskatchewan I decided to venture off to the city of Toronto to attend the design program at York University and Sheridan College.
+              I have strong thirst for knowledge which has led me learn about many different streams of design. My favourite kinds of jobs involve difficult problem solving, hands on work, or improving the world we live in.
               </p>
               <p>
                 One of the most important things about being a good designer is having a strong work ethic and good character. I feel it is important to build soft skills along with technical ones.
               </p>
               <p>
-                When I'm not working on or reading about design I'm usually off making programs on processing, rollerskating, doing yoga, and painting. As a huge music lover, I enjoy listening to records and playing my guitar. I love learning about philosophy and spending time at the library (or I used to).
+                When I'm not working on or reading about design, I'm usually off making programs on processing, roller skating, doing yoga, and painting. As a huge music lover, I enjoy listening to records and playing my guitar. I love learning about philosophy and spending time at the library (or I used to).
                 I also like to stay active by going to the gym and canoeing in the warmer months.
               </p>
             </div>
           </div>
         </div>
-
-        <!-- Processing Background -->
-        <div>
-          <script type="text/processing">
-          ArrayList <Particle> particles = new ArrayList<Particle>();//Generate new particles in a list
-          boolean cycle = true;
-          void setup() {
-            size(2000, 5000);
-            noStroke();
-            rectMode(CENTER);
-          }
-          void draw() {
-            background(255,255,255);
-            // continually add new particles
-            particles.add(new Particle());
-            for ( int i = 0; i< particles.size(); i++) {
-              if (particles.get(i).isAlive()==false) {
-                particles.remove(i);
-              }// remove particles after lifetime runs out
-              particles.get(i).display();
-              particles.get(i).move();//return a particle object
-            }
-          }
-          void mouseClicked(){
-            if( cycle == true){
-              cycle = false;
-            }
-            else{
-              cycle = true;
-            }
-          }
-          class Particle{
-            //Properties
-            PVector location;
-            PVector velocity;
-            int size;// dimensions AKA size of particle
-            boolean alive; // Boolean used to detect whether a particle is alive and if not remove it
-            float LIFETIME = random(10,600); // how many frames a particle lives
-            int steps;// counts frames
-            //Constructor
-            Particle(){
-              velocity = new PVector(random(-1,1), random(-1,1));
-              location = new PVector(random(0,width), random(0,height)); //location initialized
-              size = 20;
-              steps = 0;
-              alive = true;// when created the particle is alive
-            }
-            //Functions
-            void move(){
-              location.add(velocity);
-              steps++;// increase steps each time draw loops
-              if(steps> LIFETIME){// kill it when it hits life time
-                alive = false;
-              }
-            }
-            void display(){
-              // push and pop so rotation axis is in the middle of the square not the top corner
-              pushMatrix();
-              translate(location.x, location.y);
-              if (cycle == true){
-                fill(255,205,225,map(steps,0,LIFETIME,200,0));
-              }
-              else{
-                fill(255,205,120,map(steps,0,LIFETIME,200,0));
-              }
-
-              scale(map(steps,0,LIFETIME,0,2));
-              //rotate(radians(steps*2));// spin the degrees of steps times 2
-              ellipse(0,0,size,size);
-              popMatrix();
-            }
-
-            boolean isAlive(){
-              return alive;
-            }
-          }
-          </script>
-          <canvas id="sketch" ></canvas>
-        </div>
       </main>
-    </div>
+
     <footer>
 
       <div class="foot-content container-fluid">
@@ -156,8 +77,8 @@ SOURCES -->
         </div>
         <div class="foot-text row">
           <div class="col-xs-12 col-sm-7 col-md-6">
-              <p>Want to talk or know more? Email me at</p>
-              <p class="contact-foot">juliette.bricker@gmail.com</p>
+              <p>Want to talk or know more? Email me at <br> juliette.bricker@gmail.com</p>
+              <!-- <p class="contact-foot">juliette.bricker@gmail.com</p> -->
           </div>
         </div>
         <div class="row flexin socials">
@@ -170,12 +91,88 @@ SOURCES -->
 
       <div class="colophon container-fluid">
         <div class="c-drawer row middle-xs">
-          <img class="my-icon"src="../icons/arrow-d.png" alt="Down arrow" >
-          <h3>Colophon</h3>
         </div>
       </div>
 
     </footer>
     <script src="../js/scripts.js" defer></script>
+    <!-- Processing Background -->
+    <div>
+      <script type="text/processing">
+      ArrayList <Particle> particles = new ArrayList<Particle>();//Generate new particles in a list
+      boolean cycle = true;
+      void setup() {
+        size(2000, 5000);
+        noStroke();
+        rectMode(CENTER);
+      }
+      void draw() {
+        background(255,255,255);
+        // continually add new particles
+        particles.add(new Particle());
+        for ( int i = 0; i< particles.size(); i++) {
+          if (particles.get(i).isAlive()==false) {
+            particles.remove(i);
+          }// remove particles after lifetime runs out
+          particles.get(i).display();
+          particles.get(i).move();//return a particle object
+        }
+      }
+      void mouseClicked(){
+        if( cycle == true){
+          cycle = false;
+        }
+        else{
+          cycle = true;
+        }
+      }
+      class Particle{
+        //Properties
+        PVector location;
+        PVector velocity;
+        int size;// dimensions AKA size of particle
+        boolean alive; // Boolean used to detect whether a particle is alive and if not remove it
+        float LIFETIME = random(10,600); // how many frames a particle lives
+        int steps;// counts frames
+        //Constructor
+        Particle(){
+          velocity = new PVector(random(-1,1), random(-1,1));
+          location = new PVector(random(0,width), random(0,height)); //location initialized
+          size = 20;
+          steps = 0;
+          alive = true;// when created the particle is alive
+        }
+        //Functions
+        void move(){
+          location.add(velocity);
+          steps++;// increase steps each time draw loops
+          if(steps> LIFETIME){// kill it when it hits life time
+            alive = false;
+          }
+        }
+        void display(){
+          // push and pop so rotation axis is in the middle of the square not the top corner
+          pushMatrix();
+          translate(location.x, location.y);
+          if (cycle == true){
+            fill(255,205,225,map(steps,0,LIFETIME,200,0));
+          }
+          else{
+            fill(255,205,120,map(steps,0,LIFETIME,200,0));
+          }
+
+          scale(map(steps,0,LIFETIME,0,2));
+          //rotate(radians(steps*2));// spin the degrees of steps times 2
+          ellipse(0,0,size,size);
+          popMatrix();
+        }
+
+        boolean isAlive(){
+          return alive;
+        }
+      }
+      </script>
+      <canvas id="sketch" ></canvas>
+    </div>
   </body>
 </html>

@@ -80,7 +80,7 @@
 	}
 	.sect-title{
 		font-size: 1.5rem;
-		padding: 2rem 4rem 0 0;
+		padding: 1rem 1rem 0 1rem;
 	}
 	.mobile-only {
 	  display: block;
@@ -109,10 +109,10 @@
 .accordion:after {
   content: "";
   display: inline-block;
-  /* background-image: url('../icons/pink-arrow.svg'); */
-  background-size: 17px 7px;
-  width: 17px;
-  height: 7px;
+  background-image: url('../icons/dw-ar.png');
+  background-size: 12px 8px;
+  width: 12px;
+  height: 8px;
   float: right;
   margin-top: 5px;
   transform: rotate(180deg);
@@ -189,7 +189,7 @@
 	}
 
 	#nav-list{
-		font-size: 1.1rem;
+		font-size: 1rem;
 		font-family: var(--basic-bold);
 		font-weight: bold;
 		transform-origin: center center;
@@ -345,6 +345,10 @@
 	}
 
 /*SLIDESHOW*/
+
+	.mob-slide{
+		margin: 1rem 0;
+	}
 	.mySlides {display: none}
 	.slidepic{
 		vertical-align: middle;
@@ -356,7 +360,7 @@
 	/* Slideshow container */
 	.slideshow-container {
 	  position: relative;
-		background-color: var(--color-secondary);
+		/* background-color: var(--color-secondary); */
 	}
 
 	/* Next & previous buttons */
@@ -365,9 +369,9 @@
 	  position: absolute;
 	  top: 50%;
 	  width: auto;
-	  padding: 2rem;
-	  margin-top: -22px;
-	  color: var(--color-background);
+	  padding: 2rem ;
+	  margin: -22px 1rem;
+	  color: var(--color-main);
 	  font-weight: bold;
 	  font-size: 18px;
 	  transition: 0.6s ease;
@@ -383,7 +387,8 @@
 
 	/* On hover, add a black background color with a little bit see-through */
 	.prev:hover, .next:hover {
-	  background-color: rgba(255,205,225,0.8);
+	  background-color: var(--color-background);
+		color: var(--color-secondary);
 	}
 
 	/* Caption text */

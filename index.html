@@ -27,6 +27,10 @@
               <a href="pages/resume.html">*resume</a>
             </div>
           <script>
+          new CircleType(document.getElementById('nav-list'))
+            .dir(-1)
+            .radius(260);
+
           $( document ).ready(function() {
 
               $('#nav-list div span').each(function(index) {
@@ -76,9 +80,7 @@
 
           </script>
           <script>
-            new CircleType(document.getElementById('nav-list'))
-              .dir(-1)
-              .radius(260);
+
           </script>
           <script>
             new CircleType(document.getElementById('my-name'))

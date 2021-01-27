@@ -116,7 +116,6 @@
   float: right;
   margin-top: 5px;
   transform: rotate(180deg);
-
 }
 .accordion.active:after {
   transform: rotate(0deg);
@@ -159,6 +158,10 @@
 }
 
 
+
+
+
+
 /*NAV*/
 	.highlight{
 		color: var(--color-main) !important;
@@ -180,7 +183,7 @@
 	}
 	#my-name{
 		color: var(--color-secondary);
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-family: var(--decor-font);
 		transform: rotate(-10deg);
 		letter-spacing: -2px;
@@ -188,7 +191,7 @@
 	}
 
 	#nav-list{
-		font-size: 1rem;
+		font-size: .8rem;
 		font-family: var(--basic-bold);
 		font-weight: bold;
 		transform-origin: center center;

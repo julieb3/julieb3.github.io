@@ -27,6 +27,55 @@
               <a href="pages/resume.html">*resume</a>
             </div>
           <script>
+          $( document ).ready(function() {
+
+              $('#nav-list div span').each(function(index) {
+                  if($(this).text()=="$") { //index (type)
+                      $(this).after('<a href="../index.html">');
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="~") { //about ()
+                      $(this).after('</a><a href="pages/about.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="@") { //contact
+                      $(this).after('</a><a href="pages/contact.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="*") { //resume (editorial)
+                      $(this).after('</a><a href="pages/resume.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="&") { //pages about
+                      $(this).after('</a><a href="about.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="+") { //pages contact (info)
+                      $(this).after('</a><a href="contact.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="€") { //pages resume
+                      $(this).after('</a><a href="resume.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+                  else if($(this).text()=="≈") { //pages type
+                      $(this).after('</a><a href="index.html">'); //note adding a closing tag from previous open link
+                      $(this).remove();
+                  }
+              });
+
+             var tempString = $('#nav-list').html();
+             tempString = tempString.replace(/<\/a>/g, "");
+             tempString = tempString.replace(/<a href/g, "</a><a href");
+             //remove closing tag from first one
+             tempString = tempString.replace("</a><a href", "<a href");
+
+             $('#nav-list').html(tempString);
+
+          });
+
+          </script>
+          <script>
             new CircleType(document.getElementById('nav-list'))
               .dir(-1)
               .radius(260);

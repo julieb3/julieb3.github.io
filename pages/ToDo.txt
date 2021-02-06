@@ -1,0 +1,12 @@
+TO DO List
+
+- Find new Name typeface
+- Create new nav layout on desk and mobile
+- Make type larger on project hovers
+- Add Miscellaneous projects
+- Make hidden pixar pages
+- Determine consistent project layouts HELP
+  - Put title and details above image
+- Do project write ups
+- Make process work ACCORDIONS
+- Contact widget? Decide on contact layout

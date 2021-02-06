@@ -16,31 +16,17 @@ SOURCES -->
     <script src="../js/circletype.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <header class="row">
+
+      <header>
         <nav>
-          <a href="../index.html">
-            <h1 id="my-name">Juliette Bricker</h1>
-          </a>
-          <div id="nav-list">
-              <a href="../index.html">$work </a>
-              <a href="about.html">&about</a>
-              <a href="contact.html">+contact</a>
-              <a href="resume.html">€resume</a>
-          </div>
-          <script>
-            new CircleType(document.getElementById('my-name'))
-              .dir(-1)
-              .radius(245);
-          </script>
-          <script>
-            new CircleType(document.getElementById('nav-list'))
-              .dir(-1)
-              .radius(260);
-          </script>
+          <ul class="nav-list flexin">
+              <a href="../index.html"><li>work</li></a>
+              <a href="about.html"><li>about</li></a>
+              <a href="contact.html"><li>contact</li></a>
+            </ul>
         </nav>
       </header>
-      </div>
+
       <main>
         <!-- <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">

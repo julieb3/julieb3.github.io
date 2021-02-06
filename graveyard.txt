@@ -1,0 +1,393 @@
+Graveyard
+
+
+The other slide thingys
+
+<section>
+  <div class="row">
+    <h2 class="sect-title col-xs-12 end-sm"> more work</h2>
+  </div>
+
+<!-- Mobile Slide through Cards -->
+  <div class="row">
+    <div class="mobile-only mob-slide slideshow-container">
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">1 / 12</div> -->
+        <img src="cards/friedt.png">
+        <button data-toggle="collapse" class="accordion details">Friedt Finishing</button>
+        <div class="panel">
+          <strong>Branding and Web Design</strong>
+          <p> Friedt Finishing is a cabinetry and millwork compan located in Saskatoon. After some change in business they we're looking for a new yet familliar brand identity. With a new logo the company felt it was time for a new website which will be released sometime in early 2021.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">2 / 12</div> -->
+        <img class="show-gif"src="cards/blue.png">
+        <div class="hidden">
+          <img src="cards/blue.gif">
+        </div>
+        <button class="accordion details">Blue Faces</button>
+        <div class="panel">
+          <strong>Cover Design</strong>
+          <p>Sina is a small musician from Toronto who I worked with to create a cover for his latest single "Blue Faces". After disscusion with the artist I was able to create a visual representation of his atmospheric and wavy music through a cover and looping video for spotify.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">3 / 12</div> -->
+        <img class="show-gif" src="cards/db.png">
+        <div class="hidden">
+          <img src="cards/db.gif">
+        </div>
+        <button class="accordion details">Dirty Buckets</button>
+        <div class="panel">
+          <strong>Small Business</strong>
+          <p>During the the summer of 2020 I started my own business where I marketed and sold bucket hats handmade by myself using second hand materials.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">4 / 12</div> -->
+        <img class="show-gif" src="cards/shadow.png">
+        <div class="hidden">
+          <img src="cards/shadow.gif">
+        </div>
+        <button class="accordion details">A Speck in the Sea</button>
+        <div class="panel">
+          <strong>3D Shadowbox</strong>
+          <p>This 6 layer paper shadow box was a project I designed, cut, and assembled. It is an abstract cmposition inspired by my love of canoeing and Ray and Charles Eames' Film, Powers of Ten. </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">5 / 12</div> -->
+        <img class="show-gif" src="cards/shoe.png">
+        <div class="hidden">
+          <img src="cards/shoe.gif">
+        </div>
+        <button class="accordion details">Hidden High Heel</button>
+        <div class="panel">
+          <strong>3D Design</strong>
+          <p>In March of 2021 I was assigned a project which originally was meant to create a complex wearable paper object. Due to the lockdown I was able to design and build these shoes from found objects in my apartment. </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">6 / 12</div> -->
+        <img class="show-gif" src="cards/greens.png">
+        <button class="accordion details">Greenspace Infographic</button>
+        <div class="panel">
+          <strong>Information Design</strong>
+          <p>Inspired by Theo Deutinger’s ground breaking work in his book The Ultimate Atlas, I was inspired to use the space I had for this 11x 17 infographic print. I created a graph which compared the landspace of different post secondary campus' in Toronto and the percentage of greenspace within them. I wanted the graph to use up the space on the page so it could be visualized easier. I felt the calming purple and logical green would bring forth a theme of relaxation since being surrounded by nature is been proven to decrease negative thoughts and stress.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">7 / 12</div> -->
+        <img class="show-gif" src="cards/dist.png">
+        <div class="hidden">
+          <img src="cards/dist.gif">
+        </div>
+        <button class="accordion details">Distracted Poster and Program</button>
+        <div class="panel">
+          <strong>Typography and Programming</strong>
+          <p>To create an expressive typographic poster I created a coded program in processing to create the structure and form for a print poster. Like always, I got carried away with coding and ended up with a colorful program with type in motion that was choreographed to music.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">8 / 12</div> -->
+        <img class="show-gif" src="cards/cowboy.png">
+        <button class="accordion details">Urban Cowboy</button>
+        <div class="panel">
+          <strong>Typeface Design</strong>
+          <p>This is font is mashup of the typefaces Playbill, Texas Tango, and Monument Extended Bold. The new and bizarre urban country style of the song Old Town Road inspired me to find an old western font in the school library and combine it with a fresh typeface from pangram pangram foundry.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">9 / 12</div> -->
+        <img class="show-gif" src="cards/ds.png">
+        <div class="hidden">
+          <img src="cards/ds.gif">
+        </div>
+        <button class="accordion details">Don't Settle</button>
+        <div class="panel">
+          <strong>Animation</strong>
+          <p>This was the original pitch for a logo identity for a motavational speaker. The client was drawn to bold type with distortion and the since the name was "Don't Settle" I pitched that the distortion could relate to unsettled water.
+          After some expirementation I created this animation by printing the normal logo and weighing down the paper in the bottom of a bath tub. I then (carefully) set up lights and shot a video on my phone parralell to the waters surface and recorded the water being disrupted by my hand. I then digitized it and used the frames to creat this looping animation.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">10 / 12</div> -->
+        <img class="show-gif" src="cards/lettery.png">
+        <div class="hidden">
+          <img src="cards/lettery.gif">
+        </div>
+        <button class="accordion details">Tell Me Y</button>
+        <div class="panel">
+          <strong>Booklet</strong>
+          <p>This book was all about the letter Y! This book starts by looking at the history and form of the letter Y. It continues on to discuss the history of the YMCA along with an imagined advocate campaign this company could have.
+          It has a bold colours which include the red used by the YMCA and was printed on opal paper which was warm and bright much like the YMCA is.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">11 / 12</div> -->
+        <img class="show-gif" src="cards/dog.png">
+        <div class="hidden">
+          <img src="cards/dog.gif">
+        </div>
+        <button class="accordion details">Dog House Graphic</button>
+        <div class="panel">
+          <strong>Educational Visualization</strong>
+          <p>This four image piece was created for the University of Saskatchewan's Sociology dept. It was made to represent a concept relating to the four stages of learning. This was the first thing I ever made on illustrator and like all new things I learn, I do my reserch and take my time to make something strong.</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade col-xs-6 col-xs-offset-3">
+        <!-- <div class="numbertext">12 / 12</div> -->
+        <img class="show-gif" src="cards/ap.png">
+        <div class="hidden">
+          <img src="cards/ap.gif">
+        </div>
+        <button class="accordion details">Advanced Art Portfolio</button>
+        <div class="panel">
+          <strong>Visual Art</strong>
+          <p>The 12 images in this portfolio are pastel drawings of my high school peers in a colection titles 'Innate Youth'. I created these pieces to express the emotional, naive, and natural states teens go through as they learn to become adults. It was my detailed work, strong theme, and impressionist inspiration that awarded me a score of 5 in the Advanced Placement Art Program.</p>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+            <div class="mobile-only row" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
+              <span class="dot" onclick="currentSlide(9)"></span>
+              <span class="dot" onclick="currentSlide(10)"></span>
+              <span class="dot" onclick="currentSlide(11)"></span>
+              <span class="dot" onclick="currentSlide(12)"></span>
+            </div>
+
+  <!-- Normal Cards -->
+  <div class="desktop-only mob-slide">
+    <div class="row">
+
+    <div class="col-xs-3 col-md-3">
+      <img src="cards/friedt.png">
+      <button data-toggle="collapse" class="accordion details">Friedt Finishing</button>
+      <div class="panel">
+        <strong>Branding and Web Design</strong>
+        <p> Friedt Finishing is a cabinetry and millwork compan located in Saskatoon. After some change in business they we're looking for a new yet familliar brand identity. With a new logo the company felt it was time for a new website which will be released sometime in early 2021.</p>
+      </div>
+    </div>
+
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif"src="cards/blue.png">
+      <div class="hidden">
+        <img src="cards/blue.gif">
+      </div>
+      <button class="accordion details">Blue Faces</button>
+      <div class="panel">
+        <strong>Cover Design</strong>
+        <p>Sina is a small musician from Toronto who I worked with to create a cover for his latest single "Blue Faces". After disscusion with the artist I was able to create a visual representation of his atmospheric and wavy music through a cover and looping video for spotify.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/db.png">
+      <div class="hidden">
+        <img src="cards/db.gif">
+      </div>
+      <button class="accordion details">Dirty Buckets</button>
+      <div class="panel">
+        <strong>Small Business</strong>
+        <p>During the the summer of 2020 I started my own business where I marketed and sold bucket hats handmade by myself using second hand materials.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/shadow.png">
+      <div class="hidden">
+        <img src="cards/shadow.gif">
+      </div>
+      <button class="accordion details">A Speck in the Sea</button>
+      <div class="panel">
+        <strong>3D Shadowbox</strong>
+        <p>This 6 layer paper shadow box was a project I designed, cut, and assembled. It is an abstract cmposition inspired by my love of canoeing and Ray and Charles Eames' Film, Powers of Ten. </p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/shoe.png">
+      <div class="hidden">
+        <img src="cards/shoe.gif">
+      </div>
+      <button class="accordion details">Hidden High Heel</button>
+      <div class="panel">
+        <strong>3D Design</strong>
+        <p>In March of 2021 I was assigned a project which originally was meant to create a complex wearable paper object. Due to the lockdown I was able to design and build these shoes from found objects in my apartment. </p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/greens.png">
+      <button class="accordion details">Greenspace Infographic</button>
+      <div class="panel">
+        <strong>Information Design</strong>
+        <p>Inspired by Theo Deutinger’s ground breaking work in his book The Ultimate Atlas, I was inspired to use the space I had for this 11x 17 infographic print. I created a graph which compared the landspace of different post secondary campus' in Toronto and the percentage of greenspace within them. I wanted the graph to use up the space on the page so it could be visualized easier. I felt the calming purple and logical green would bring forth a theme of relaxation since being surrounded by nature is been proven to decrease negative thoughts and stress.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/dist.png">
+      <div class="hidden">
+        <img src="cards/dist.gif">
+      </div>
+      <button class="accordion details">Distracted Poster and Program</button>
+      <div class="panel">
+        <strong>Typography and Programming</strong>
+        <p>To create an expressive typographic poster I created a coded program in processing to create the structure and form for a print poster. Like always, I got carried away with coding and ended up with a colorful program with type in motion that was choreographed to music.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/cowboy.png">
+      <button class="accordion details">Urban Cowboy</button>
+      <div class="panel">
+        <strong>Typeface Design</strong>
+        <p>This is font is mashup of the typefaces Playbill, Texas Tango, and Monument Extended Bold. The new and bizarre urban country style of the song Old Town Road inspired me to find an old western font in the school library and combine it with a fresh typeface from pangram pangram foundry.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/ds.png">
+      <div class="hidden">
+        <img src="cards/ds.gif">
+      </div>
+      <button class="accordion details">Don't Settle</button>
+      <div class="panel">
+        <strong>Animation</strong>
+        <p>This was the original pitch for a logo identity for a motavational speaker. The client was drawn to bold type with distortion and the since the name was "Don't Settle" I pitched that the distortion could relate to unsettled water.
+        After some expirementation I created this animation by printing the normal logo and weighing down the paper in the bottom of a bath tub. I then (carefully) set up lights and shot a video on my phone parralell to the waters surface and recorded the water being disrupted by my hand. I then digitized it and used the frames to creat this looping animation.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/lettery.png">
+      <div class="hidden">
+        <img src="cards/lettery.gif">
+      </div>
+      <button class="accordion details">Tell Me Y</button>
+      <div class="panel">
+        <strong>Booklet</strong>
+        <p>This book was all about the letter Y! This book starts by looking at the history and form of the letter Y. It continues on to discuss the history of the YMCA along with an imagined advocate campaign this company could have.
+        It has a bold colours which include the red used by the YMCA and was printed on opal paper which was warm and bright much like the YMCA is.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/dog.png">
+      <div class="hidden">
+        <img src="cards/dog.gif">
+      </div>
+      <button class="accordion details">Dog House Graphic</button>
+      <div class="panel">
+        <strong>Educational Visualization</strong>
+        <p>This four image piece was created for the University of Saskatchewan's Sociology dept. It was made to represent a concept relating to the four stages of learning. This was the first thing I ever made on illustrator and like all new things I learn, I do my reserch and take my time to make something strong.</p>
+      </div>
+    </div>
+
+    <div class="col-xs-3 col-md-3">
+      <img class="show-gif" src="cards/ap.png">
+      <div class="hidden">
+        <img src="cards/ap.gif">
+      </div>
+      <button class="accordion details">Advanced Art Portfolio</button>
+      <div class="panel">
+        <strong>Visual Art</strong>
+        <p>The 12 images in this portfolio are pastel drawings of my high school peers in a colection titles 'Innate Youth'. I created these pieces to express the emotional, naive, and natural states teens go through as they learn to become adults. It was my detailed work, strong theme, and impressionist inspiration that awarded me a score of 5 in the Advanced Placement Art Program.</p>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+Javascript make circle type link list work
+
+// NAVIGATION Ensures that nav links work with circletype in use. Help recieved from Katrina Loverick
+$( document ).ready(function() {
+
+    $('#nav-list div span').each(function(index) {
+        if($(this).text()=="$") { //index (type)
+            $(this).after('<a href="../index.html">');
+            $(this).remove();
+        }
+        else if($(this).text()=="~") { //about ()
+            $(this).after('</a><a href="pages/about.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+        else if($(this).text()=="@") { //contact
+            $(this).after('</a><a href="pages/contact.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+        else if($(this).text()=="*") { //resume (editorial)
+            $(this).after('</a><a href="pages/resume.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+        else if($(this).text()=="&") { //pages about
+            $(this).after('</a><a href="about.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+        else if($(this).text()=="+") { //pages contact (info)
+            $(this).after('</a><a href="contact.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+        else if($(this).text()=="€") { //pages resume
+            $(this).after('</a><a href="resume.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+        else if($(this).text()=="≈") { //pages type
+            $(this).after('</a><a href="index.html">'); //note adding a closing tag from previous open link
+            $(this).remove();
+        }
+    });
+
+   var tempString = $('#nav-list').html();
+   tempString = tempString.replace(/<\/a>/g, "");
+   tempString = tempString.replace(/<a href/g, "</a><a href");
+   //remove closing tag from first one
+   tempString = tempString.replace("</a><a href", "<a href");
+
+   $('#nav-list').html(tempString);
+
+});
+
+Circletype to place in html 
+
+    <script>
+      new CircleType(document.getElementById('nav-list'))
+        .dir(-1)
+        .radius(260);
+    </script>
+    <script>
+      new CircleType(document.getElementById('my-name'))
+        .dir(-1)
+        .radius(245);
+    </script>

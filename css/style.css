@@ -229,12 +229,27 @@
 		.p-title{
 			color: var(--color-secondary);
 			font-family: var(--bold-font);
-			font-size: 4rem;
+			font-size: 3rem;
 			padding: 3rem 0 2rem 0;
 		}
-		.p-sub, .p-date{
+		.p-subs h2{
+			padding: 0 10px;
 			color: var(--color-main);
 			font-size: 1rem;
+		}
+		/*For Phad*/
+		.sect-title{
+			color: var(--color-secondary);
+			padding: 1rem;
+		}
+		.intro-pic{
+			margin: .5rem 0;
+		}
+		.special-bg{
+			background-color: var(--color-background);
+		}
+		iframe{
+			margin: .5rem 0;
 		}
 
 /*----ABOUT--------------------------------------------------------*/
@@ -254,7 +269,7 @@
 			position:relative;
 			height: 200px;
 			position: relative;
-			margin-top: 100px;
+			margin-top: 200px;
 		}
 		footer p{
 			font-size: 1.5rem;
@@ -447,7 +462,20 @@
 			border-bottom-left-radius: 10px;
 			border-bottom-right-radius: 10px;
 		} */
+
+		/*So special is no different than the normal but normal is included in this 480 constraint
+		which was added to make sure the project sub heads float properly. *maybe fix this so the special
+		is applied to the sub heads and not the normal- J*/
+
 @media only screen and (min-width: 480px) {
+	.desktop-only {
+		display: none;
+	}
+	.mobile-only {
+		display: block;
+	}
+
+
 	.monocard{
 		height: 320px;
 	}
@@ -471,6 +499,8 @@
 	.mobile-only {
 		display: none;
 	}
+
+
 	section{
 		margin: 0 0;
 	}
@@ -508,6 +538,12 @@
 		width: 25px;
 	}
 
+	/*PAGES*/
+	.p-title{
+		font-size: 4rem;
+		padding: 3rem 0 2rem 0;
+	}
+
 
 	.contact-me{
 		font-size: 48px;
@@ -521,6 +557,21 @@
 		font-size: 1.5rem;
 		margin: 3rem 0 1rem 0;
 	}
+	.sect-title{
+		color: var(--color-background);
+		padding: 1rem;
+	}
+	.intro-pic{
+		margin: .5rem 0;
+		padding: 1rem;
+
+	}
+
+	.special-bg{
+		background-color: var(--color-secondary);
+	}
+
+
 
 	.monocard{
 		height: 500px;
@@ -555,5 +606,6 @@
 	.hide {
 		height: 600px;
 	}
+
 
 }

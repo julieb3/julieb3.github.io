@@ -252,13 +252,25 @@
 			margin: .5rem 0;
 		}
 
+		/*Contact Page*/
+		.contact-me{
+			height: 60vh;
+			font-size: 1rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.contact-me h2{
+			padding-top: 30vh;
+		}
+
+
 /*----ABOUT--------------------------------------------------------*/
 		.about-pic{
 			margin: 0 0 0 0;
 		}
 
 		.about-title{
-			font-size: 1.5rem;
+			font-size: 3rem;
 			margin: 0 1rem;
 		}
 
@@ -545,17 +557,14 @@
 	}
 
 
-	.contact-me{
-		font-size: 48px;
-	}
 
 	.about-pic{
 		margin: 50px 0 0 0;
 	}
 
 	.about-title{
-		font-size: 1.5rem;
-		margin: 3rem 0 1rem 0;
+		font-size: 4rem;
+		margin: 4rem 0 1rem .5rem;
 	}
 	.sect-title{
 		color: var(--color-background);
@@ -570,7 +579,6 @@
 	.special-bg{
 		background-color: var(--color-secondary);
 	}
-
 
 
 	.monocard{

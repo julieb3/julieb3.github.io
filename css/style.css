@@ -48,7 +48,7 @@
 
 /*----BASICS--------------------------------------------------------*/
 		:root {
-			--basic-bold: 'Avenir LT W05_95 Black',sans-serif;
+			--bold-font: 'Avenir LT W05_95 Black',sans-serif;
 			--basic-font: 'Avenir LT W05_85 Heavy',sans-serif;
 			--decor-font: 'Octopuss LT W05 Regular',serif;
 			--color-main: #ffd4f1; /* purp 255 212 241           OLD: pink FFCDE1 255,205,225 */
@@ -143,7 +143,7 @@
 		}
 		nav ul{
 			font-size: 2rem;
-			font-family: var(--basic-bold);
+			font-family: var(--bold-font);
 			letter-spacing: -.5px;
 			display: flex;
 			max-width: 1000px;
@@ -152,16 +152,21 @@
 		}
 
 		.hero{
-			height: 90vh;
+			height: 60vh;
 		}
-		.hero h1{
-			padding-top: 200px;
+		.hero-content{
+			padding-top: 15vh;
 		}
-
+		.subhead{
+			margin: 1rem 0;
+			width: 250px;
+			/* font-size: 1.1rem; */
+			/* padding-left: 8px; */
+		}
 		.my-name{
 			color: var(--color-secondary);
 			font-family: var(--decor-font);
-			font-size: 4rem;
+			font-size: 4.4rem;
 			letter-spacing: 2px;
 		}
 
@@ -195,8 +200,11 @@
 		}
 		.hide h3{
 			color: var(--color-background);
-			font-size: 3rem;
-			font-family: var(--decor-font);
+			font-size: 2.5rem;
+			font-family: var(--bold-font);
+		}
+		.hide h4{
+			font-size: 1.5rem;
 		}
 		.chunk{
 			position: absolute;
@@ -250,7 +258,7 @@
 			padding: 2% 0 30px 15px;
 		}
 		.contact-foot{
-			font-family: var(--basic-bold);
+			font-family: var(--bold-font);
 			margin-top: 10px;
 		}
 
@@ -470,6 +478,20 @@
 		margin: 0 2rem;
 	}
 
+	.hero{
+		height: 90vh;
+	}
+	.my-name{
+		font-size: 6rem;
+		letter-spacing: 2px;
+	}
+	.hero-content{
+		padding-top: 30vh;
+	}
+	.subhead{
+		font-size: 2rem;
+		width: 440px;
+	}
 
 
 

@@ -128,7 +128,7 @@
 			font-size: 3rem;
 		}
 		nav li{
-			margin: 0 .75rem;
+			margin: 0 0;
 			padding: 10px 0 12px 0;
 			border-top: 2px solid var(--color-main);
 		}
@@ -142,11 +142,12 @@
 			color: var(--color-secondary);
 		}
 		nav ul{
+			justify-content: space-evenly;
 			font-size: 2rem;
 			font-family: var(--bold-font);
 			letter-spacing: -.5px;
 			display: flex;
-			max-width: 1000px;
+			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -170,13 +171,22 @@
 			letter-spacing: 2px;
 		}
 
+		.see-more{
+			padding-top: 10vh;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.see-more img{
+			width: 30px;
+		}
+
 
 /*----HOMEPAGE--------------------------------------------------------*/
 
 	/* Project Cards*/
 
 		.monocard{
-			height: 300px;
+			height: 250px;
 			overflow:hidden;
 			margin: 1rem 0;
 		}
@@ -184,18 +194,18 @@
 		.monocard:hover + .hide {
 		  display: block;
 			position: relative;
-			margin: -316px 0 1rem 0;
+			margin: -266px 0 1rem 0;
 		}
 		.hide:hover {
 		  display: block;
 			position: relative;
-			margin: -316px 0 1rem 0;
+			margin: -266px 0 1rem 0;
 		}
 
 
 		.hide {
 			display: none;
-			height: 300px;
+			height: 250px;
 			overflow: hidden;
 		}
 		.hide h3{
@@ -255,7 +265,7 @@
 			margin-left: auto;
 		}
 		.foot-text{
-			padding: 2% 0 30px 15px;
+			padding: 2% 0 30px 4px;
 		}
 		.contact-foot{
 			font-family: var(--bold-font);
@@ -454,16 +464,30 @@
 			border-bottom-left-radius: 10px;
 			border-bottom-right-radius: 10px;
 		}
+@media only screen and (min-width: 480px) {
+	.monocard{
+		height: 320px;
+	}
 
-/*----DESKTOP--------------------------------------------------------*/
+	.monocard:hover + .hide {
+		margin: -336px 0 1rem 0;
+	}
+	.hide:hover {
+		margin: -336px 0 1rem 0;
+	}
+	.hide {
+		height: 320px;
+	}
+}
+/*----TAB and DESKTOP--------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
 	/*BASICS*/
-  .desktop-only {
-    display: block;
-  }
-  .mobile-only {
-    display: none;
-  }
+	.desktop-only {
+		display: block;
+	}
+	.mobile-only {
+		display: none;
+	}
 	section{
 		margin: 0 0;
 	}
@@ -477,7 +501,9 @@
 	nav li{
 		margin: 0 2rem;
 	}
-
+	nav ul{
+		width: auto;
+	}
 	.hero{
 		height: 90vh;
 	}
@@ -492,7 +518,12 @@
 		font-size: 2rem;
 		width: 440px;
 	}
-
+	.see-more{
+		padding-top: 25vh;
+	}
+	.see-more img{
+		width: 25px;
+	}
 
 
 	.contact-me{
@@ -508,34 +539,40 @@
 		margin: 3rem 0 1rem 0;
 	}
 
-	.card{
-		margin-top: -10%;
-	}
 	.monocard{
-		height: 600px;
-		overflow:hidden;
-		margin: 1rem 0;
+		height: 500px;
 	}
 
 	.monocard:hover + .hide {
-		display: block;
-		position: relative;
-		margin: -616px 0 1rem 0;
+		margin: -516px 0 1rem 0;
 	}
 	.hide:hover {
-		display: block;
-		position: relative;
-		margin: -616px 0 1rem 0;
+		margin: -516px 0 1rem 0;
 	}
-
-
 	.hide {
-		display: none;
-		height: 600px;
-		overflow: hidden;
+		height: 500px;
 	}
+
+
+
+
 	footer{
 		font-size: 2rem;
 		line-height: 2.2rem;
+	}
+/*----DESKTOP--------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+	.monocard{
+		height: 600px;
+	}
+
+	.monocard:hover + .hide {
+		margin: -616px 0 1rem 0;
+	}
+	.hide:hover {
+		margin: -616px 0 1rem 0;
+	}
+	.hide {
+		height: 600px;
 	}
 }

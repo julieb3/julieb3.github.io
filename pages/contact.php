@@ -1,5 +1,20 @@
-<!-- PORTFOLIO WEBSITE, INFORMATION DESIGN, Juliette Bricker, May 14 2020
-SOURCES -->
+<?php
+
+if($_POST["submit"]) {
+    $recipient="juliette.bricker@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?>
+<!-- https://www.htmldog.com/techniques/formtoemail/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,13 +44,22 @@ SOURCES -->
 
       <main class="container-fluid">
         <h3>Contact Form</h3>
+        <?=$thankYou ?>
 
         <div class="row">
           <div class="con-box col-xs-12">
             <form method="post" action="contact.php">
-              <textarea name="message"></textarea>
-              <input type="submit">
-          </form>
+               <label>Name:</label>
+               <input name="sender">
+
+               <label>Email address:</label>
+               <input name="senderEmail">
+
+               <label>Message:</label>
+               <textarea rows="5" cols="20" name="message"></textarea>
+
+               <input type="submit" name="submit">
+           </form>
 
             <!--
           <form method="post" name="myemailform" action="../form-to-email.php">

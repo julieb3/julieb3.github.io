@@ -28,30 +28,29 @@ SOURCES -->
       </header>
 
       <main class="container-fluid">
-        <h3>Contact Form</h3>
 
-        <div class="row">
-          <div class="con-box col-xs-12">
-            <form method="post" action="contact.php">
-              <textarea name="message"></textarea>
-              <input type="submit">
-          </form>
-
-            <!--
-          <form method="post" name="myemailform" action="../form-to-email.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name..">
-
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="email" placeholder="Your last name..">
-
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Send Form">
-          </form> -->
-        </div>
+        <div class="my-form ">
+          <div class="flexin">
+          <h2> Let's Chat!</h2>
+          <div class="desktop-only  tightright">
+          <div class="socials flexin">
+            <a class="my-icon" href="https://www.linkedin.com/in/juliette-bricker-a51b43160/" target="_blank" rel="noopener noreferrer"><img src="../icons/link.png" alt="Linkedin Link" ></a>
+            <a class="my-icon" href="https://the-dots.com/users/juliette-bricker-862649" target="_blank" rel="noopener noreferrer"><img src="../icons/dots.png" alt="The Dots Link" ></a>
+            <a class="my-icon" href="https://www.instagram.com/juliette.bricker/" target="_blank" rel="noopener noreferrer"><img src="../icons/insta.png" alt="Instagram link" ></a>
+          </div>
+          </div>
+          </div>
+            <form  action="https://formspree.io/f/xknpedor" method="POST">
+              <h3>name*</h3>
+              <input placeholder="Bob Sacamano" type="text" name="name">
+              <h3>email*</h3>
+              <input placeholder="your@email.com" type="email" name="_replyto">
+              <h3>message*</h3>
+              <textarea class="mob-message mobile-only" placeholder="Write your message here" name="message"></textarea>
+              <textarea class="desk-message desktop-only" placeholder="Write your message here" name="message"></textarea>
+              <br>
+              <input class="mit-button" type="submit" value="Send">
+            </form>
         </div>
       </main>
 

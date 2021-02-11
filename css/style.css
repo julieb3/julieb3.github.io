@@ -295,7 +295,7 @@
 			border-bottom-left-radius: 8px;
 		}
 		.my-form h3{
-			padding: 1.5rem 0 .5rem 0;
+			padding: 1.5rem 0 .8rem 0;
 			font-size: 1.2rem;
 		}
 
@@ -345,6 +345,25 @@
 		.tightright{
 			margin-left: auto;
 			padding-right: 1rem;
+		}
+
+
+		.miscs{
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		.miscs img, .miscs iframe{
+			margin: 1rem 0;
+		}
+		.miscs h2{
+			margin: 2rem auto 1rem .5rem;
+			font-size: 2rem;
+		}
+		.miscs a{
+			margin: 0 .2rem;
+		}
+		.miscs a:hover{
+			color: var(--color-secondary);
 		}
 
 

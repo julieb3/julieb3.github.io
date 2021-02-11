@@ -1,20 +1,20 @@
 <?php
+if(!empty($_POST["send"])) {
+	$name = $_POST["userName"];
+	$email = $_POST["userEmail"];
+	$subject = $_POST["subject"];
+	$content = $_POST["content"];
 
-if($_POST["submit"]) {
-    $recipient="juliette.bricker@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+	$conn = mysqli_connect("localhost", "root", "test", "blog_samples") or die("Connection Error: " . mysqli_error($conn));
+	mysqli_query($conn, "INSERT INTO tblcontact (user_name, user_email,subject,content) VALUES ('" . $name. "', '" . $email. "','" . $subject. "','" . $content. "')");
+	$insert_id = mysqli_insert_id($conn);
+	//if(!empty($insert_id)) {
+	   $message = "Your contact information is saved successfully.";
+	   $type = "success";
+	//}
 }
+require_once "contact.php";
 ?>
-<!-- https://www.htmldog.com/techniques/formtoemail/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,40 +43,93 @@ if($_POST["submit"]) {
       </header>
 
       <main class="container-fluid">
-        <h3>Contact Form</h3>
-        <?=$thankYou ?>
+        <div class="form-container">
+            <form name="frmContact" id="" frmContact"" method="post"
+                action="" enctype="multipart/form-data"
+                onsubmit="return validateContactForm()">
 
-        <div class="row">
-          <div class="con-box col-xs-12">
-            <form method="post" action="contact.php">
-               <label>Name:</label>
-               <input name="sender">
+                <div class="input-row">
+                    <label style="padding-top: 20px;">Name</label> <span
+                        id="userName-info" class="info"></span><br /> <input
+                        type="text" class="input-field" name="userName"
+                        id="userName" />
+                </div>
+                <div class="input-row">
+                    <label>Email</label> <span id="userEmail-info"
+                        class="info"></span><br /> <input type="text"
+                        class="input-field" name="userEmail" id="userEmail" />
+                </div>
+                <div class="input-row">
+                    <label>Subject</label> <span id="subject-info"
+                        class="info"></span><br /> <input type="text"
+                        class="input-field" name="subject" id="subject" />
+                </div>
+                <div class="input-row">
+                    <label>Message</label> <span id="userMessage-info"
+                        class="info"></span><br />
+                    <textarea name="content" id="content"
+                        class="input-field" cols="60" rows="6"></textarea>
+                </div>
+                <div>
+                    <input type="submit" name="send" class="btn-submit"
+                        value="Send" />
 
-               <label>Email address:</label>
-               <input name="senderEmail">
-
-               <label>Message:</label>
-               <textarea rows="5" cols="20" name="message"></textarea>
-
-               <input type="submit" name="submit">
-           </form>
-
-            <!--
-          <form method="post" name="myemailform" action="../form-to-email.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name..">
-
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="email" placeholder="Your last name..">
-
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Send Form">
-          </form> -->
+                    <div id="statusMessage">
+                            <?php
+                            if (! empty($message)) {
+                                ?>
+                                <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                </div>
+            </form>
         </div>
-        </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"
+            type="text/javascript"></script>
+        <script type="text/javascript">
+            function validateContactForm() {
+                var valid = true;
+
+                $(".info").html("");
+                $(".input-field").css('border', '#e0dfdf 1px solid');
+                var userName = $("#userName").val();
+                var userEmail = $("#userEmail").val();
+                var subject = $("#subject").val();
+                var content = $("#content").val();
+
+                if (userName == "") {
+                    $("#userName-info").html("Required.");
+                    $("#userName").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+                if (userEmail == "") {
+                    $("#userEmail-info").html("Required.");
+                    $("#userEmail").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+                if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+                {
+                    $("#userEmail-info").html("Invalid Email Address.");
+                    $("#userEmail").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+
+                if (subject == "") {
+                    $("#subject-info").html("Required.");
+                    $("#subject").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+                if (content == "") {
+                    $("#userMessage-info").html("Required.");
+                    $("#content").css('border', '#e66262 1px solid');
+                    valid = false;
+                }
+                return valid;
+            }
+      </script>
       </main>
 
 

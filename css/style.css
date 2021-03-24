@@ -65,10 +65,11 @@
 		:root {
 			--bold-font: 'Avenir LT W05_95 Black',sans-serif;
 			--basic-font: 'Avenir LT W05_85 Heavy',sans-serif;
-			--decor-font: 'Octopuss LT W05 Regular',serif;
-			--color-main: #ffd4f1; /* purp 255 212 241           OLD: pink FFCDE1 255,205,225 */
-			--color-lighten: #ffeaf9;
-			--color-secondary: #754864; /*dark purp  117 72 100  OLD: orange FFCD78 255,205,120  */
+			--body-font: 'Avenir LT W05_55 Roman',serif;
+			--decor-font: 'Avenir LT W05_95 Black',serif; /*'Gelica W05 Medium'*/
+			--color-main: #39ede7; /*    OLD:pink #ffd4f1  purp 255 212 241  pink FFCDE1 255,205,225 */
+			--color-lighten: #c2fffd;
+			--color-secondary: #00302f; /*  dark purp #754864 117 72 100  OLD: orange FFCD78 255,205,120  */
 			--color-background: white; /*white 255               OLD: cream #FFFAF0  255,250,240 */
 		}
 		.secondary{
@@ -87,7 +88,7 @@
 		}
 		p{
 			line-height: 1.5;
-			font-family: var(--basic-font);
+			font-family: var(--body-font);
 			font-size: 1.3rem;
 		}
 		.padme{
@@ -308,7 +309,7 @@
 			border: none;
 			background-color: var(--color-main);
 			padding: 0 .5rem;
-			font-family: var(--basic-font);
+			font-family: var(--body-font);
 			font-size: 1rem;
 			color: var(--color-secondary);
 		}
@@ -343,8 +344,8 @@
 			color: var(--color-main);
 		}
 		::placeholder {
-			font-family: var(--basic-font);
-			color: #ebbae1;
+			font-family: var(--body-font);
+			color: var(--color-lighten);
 		}
 		.tightright{
 			margin-left: auto;

@@ -315,11 +315,12 @@ SOURCES -->
             pushMatrix();
             translate(location.x, location.y);
             if (cycle == true){
-              fill(255,205,225,map(steps,0,LIFETIME,200,0));
+              fill(145, 255, 251,map(steps,0,LIFETIME,200,0));
             }
             else{
-              fill(255,205,120,map(steps,0,LIFETIME,200,0));
+              fill(145, 255, 251,map(steps,0,LIFETIME,200,0));
             }
+
 
             scale(map(steps,0,LIFETIME,0,2));
             //rotate(radians(steps*2));// spin the degrees of steps times 2

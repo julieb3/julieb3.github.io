@@ -69,7 +69,7 @@
 			--decor-font: 'Avenir LT W05_95 Black',serif; /*'Gelica W05 Medium'*/
 			--color-main: #39ede7; /*    OLD:pink #ffd4f1  purp 255 212 241  pink FFCDE1 255,205,225 */
 			--color-lighten: #c2fffd;
-			--color-secondary: #00302f; /*  dark purp #754864 117 72 100  OLD: orange FFCD78 255,205,120  */
+			--color-secondary: #FF6805; /*  Blue 00302f dark purp #754864 117 72 100  OLD: orange FFCD78 255,205,120  */
 			--color-background: white; /*white 255               OLD: cream #FFFAF0  255,250,240 */
 		}
 		.secondary{

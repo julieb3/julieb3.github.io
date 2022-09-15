@@ -64,13 +64,13 @@
 /*----BASICS--------------------------------------------------------*/
 		:root {
 			--bold-font: 'Avenir LT W05_95 Black',sans-serif;  /*Options: 'Avenir LT W05_95 Black''Avenir LT W05_85 Heavy''Avenir LT W05_55 Roman'*/
-			--basic-font: 'Avenir LT W05_55 Roman',sans-serif;
+			--basic-font: 'Avenir LT W05_95 Black',sans-serif;
 			--body-font: 'Avenir LT W05_55 Roman',serif;
 			--decor-font: 'Avenir LT W05_95 Black',serif; /*'Gelica W05 Medium'*/
-			--color-main: #7A8D54; /*    OLD:pink #ffd4f1  purp 255 212 241  pink FFCDE1 255,205,225 */
-			--color-lighten: #DDEEBB;
-			--color-secondary: #B0BE95; /*  Blue 00302f dark purp #754864 117 72 100  OLD: orange FFCD78 255,205,120  */
-			--color-background: white; /*white 255               OLD: cream #FFFAF0  255,250,240 */
+			--color-main: #4f996e; /*    OLD:pink #ffd4f1  purp 255 212 241  pink FFCDE1 255,205,225 */
+			--color-lighten: #69b788;
+			--color-secondary: #d2ff8a; /*  Blue 00302f dark purp #754864 117 72 100  OLD: orange FFCD78 255,205,120  */
+			--color-background: #fffffa; /*white 255               OLD: cream #FFFAF0  255,250,240 */
 		}
 		.secondary{
 			color: var(--color-secondary);
@@ -102,6 +102,9 @@
 			color: var(--color-main);
 			text-decoration: none;
 		}
+		h4{
+			color: var(--color-secondary);
+		}
 
 		.mobile-only {
 		  display: block;
@@ -111,6 +114,14 @@
 		}
 		.flexin{
 			display: flex;
+		}
+
+
+
+		.bigboi{
+			font-size: 32px;
+			padding-top: 10px;
+			color: #69b788;
 		}
 
 /*----CURSOR--------------------------------------------------------*/
@@ -184,8 +195,8 @@
 			/* padding-left: 8px; */
 		}
 		.my-name{
-			color: var(--color-secondary);
-			font-family: var(--decor-font);
+			color: var(--color-main);
+			font-family: var(--basic-font);
 			font-size: 4.4rem;
 			letter-spacing: 2px;
 		}

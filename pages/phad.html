@@ -120,82 +120,158 @@ SOURCES -->
 
       </footer>
     <script src="../js/scripts.js" defer></script>
-<!-- Processing Background -->
+    <!-- Processing Background -->
     <div>
       <script type="text/processing">
-        ArrayList <Particle> particles = new ArrayList<Particle>();//Generate new particles in a list
-        boolean cycle = true;
-        void setup() {
-          size(1000, 5000);
-          noStroke();
-          rectMode(CENTER);
+      ArrayList <Particleb> particlesb = new ArrayList<Particleb>();//Generate new particles in a list
+      boolean cycleb = true;
+
+      ArrayList <Particle> particles = new ArrayList<Particle>();//Generate new particles in a list
+      boolean cycle = true;
+
+      void setup() {
+        size(2000, 5000);
+        noStroke();
+        rectMode(CENTER);
+      }
+
+
+      void draw() {
+        background(255,255,250);
+
+        particles.add(new Particle());
+        for ( int i = 0; i< particles.size(); i++) {
+          if (particles.get(i).isAlive()==false) {
+            particles.remove(i);
+          }// remove particles after lifetime runs out
+          particles.get(i).display();
+          particles.get(i).move();//return a particle object
         }
-        void draw() {
-          background(255,255,255);
-          // continually add new particles
-          particles.add(new Particle());
-          for ( int i = 0; i< particles.size(); i++) {
-            if (particles.get(i).isAlive()==false) {
-              particles.remove(i);
-            }// remove particles after lifetime runs out
-            particles.get(i).display();
-            particles.get(i).move();//return a particle object
+
+        // continually add new particles
+        particlesb.add(new Particleb());
+        for ( int j = 0; j< particlesb.size(); j++) {
+          if (particlesb.get(j).isAliveb()==false) {
+            particlesb.remove(j);
+          }// remove particles after lifetime runs out
+          particlesb.get(j).displayb();
+          particlesb.get(j).moveb();//return a particle object
+        }
+      }
+
+      void mouseClicked(){
+        if( cycle == true){
+          cycle = false;
+        }
+        else{
+          cycle = true;
+        }
+      }
+
+
+      void mouseClicked(){
+        if( cycleb == true){
+          cycleb = false;
+        }
+        else{
+          cycleb = true;
+        }
+      }
+
+      class Particle{
+        //Properties
+        PVector location;
+        PVector velocity;
+        int size;// dimensions AKA size of particle
+        boolean alive; // Boolean used to detect whether a particle is alive and if not remove it
+        float LIFETIME = random(10,600); // how many frames a particle lives
+        int steps;// counts frames
+        //Constructor
+        Particle(){
+          velocity = new PVector(random(-1,1), random(-1,1));
+          location = new PVector(random(0,width), random(0,height)); //location initialized
+          size = 20;
+          steps = 0;
+          alive = true;// when created the particle is alive
+        }
+        //Functions
+        void move(){
+          location.add(velocity);
+          steps++;// increase steps each time draw loops
+          if(steps> LIFETIME){// kill it when it hits life time
+            alive = false;
           }
         }
-        void mouseClicked(){
-          if( cycle == true){
-            cycle = false;
+        void display(){
+          // push and pop so rotation axis is in the middle of the square not the top corner
+          pushMatrix();
+          translate(location.x, location.y);
+          if (cycle == true){
+            fill(210, 255, 138,map(steps,0,LIFETIME,200,0));
           }
           else{
-            cycle = true;
+            fill(210, 255, 138,map(steps,0,LIFETIME,200,0));
+          }
+
+
+          scale(map(steps,0,LIFETIME,0,2));
+          //rotate(radians(steps*2));// spin the degrees of steps times 2
+          ellipse(0,0,size,size);
+          popMatrix();
+        }
+
+        boolean isAlive(){
+          return alive;
+        }
+      }
+
+      class Particleb{
+        //Properties
+        PVector locationb;
+        PVector velocityb;
+        int sizeb;// dimensions AKA size of particle
+        boolean aliveb; // Boolean used to detect whether a particle is alive and if not remove it
+        float LIFETIMEb = random(10,600); // how many frames a particle lives
+        int stepsb;// counts frames
+        //Constructor
+        Particleb(){
+          velocityb = new PVector(random(-1,1), random(-1,1));
+          locationb = new PVector(random(0,width), random(0,height)); //location initialized
+          sizeb = 20;
+          stepsb = 0;
+          aliveb = true;// when created the particle is alive
+        }
+        //Functions
+        void moveb(){
+          locationb.add(velocityb);
+          stepsb++;// increase steps each time draw loops
+          if(stepsb> LIFETIMEb){// kill it when it hits life time
+            aliveb = false;
           }
         }
-        class Particle{
-          //Properties
-          PVector location;
-          PVector velocity;
-          int size;// dimensions AKA size of particle
-          boolean alive; // Boolean used to detect whether a particle is alive and if not remove it
-          float LIFETIME = random(10,600); // how many frames a particle lives
-          int steps;// counts frames
-          //Constructor
-          Particle(){
-            velocity = new PVector(random(-1,1), random(-1,1));
-            location = new PVector(random(0,width), random(0,height)); //location initialized
-            size = 20;
-            steps = 0;
-            alive = true;// when created the particle is alive
+        void displayb(){
+          // push and pop so rotation axis is in the middle of the square not the top corner
+          pushMatrix();
+          translate(locationb.x, locationb.y);
+          if (cycleb == true){
+            fill(50, 204, 121,map(stepsb,0,LIFETIMEb,200,0));
           }
-          //Functions
-          void move(){
-            location.add(velocity);
-            steps++;// increase steps each time draw loops
-            if(steps> LIFETIME){// kill it when it hits life time
-              alive = false;
-            }
-          }
-          void display(){
-            // push and pop so rotation axis is in the middle of the square not the top corner
-            pushMatrix();
-            translate(location.x, location.y);
-            if (cycle == true){
-              fill(145, 255, 251,map(steps,0,LIFETIME,200,0));
-            }
-            else{
-              fill(145, 255, 251,map(steps,0,LIFETIME,200,0));
-            }
-
-
-            scale(map(steps,0,LIFETIME,0,2));
-            //rotate(radians(steps*2));// spin the degrees of steps times 2
-            ellipse(0,0,size,size);
-            popMatrix();
+          else{
+            fill(50, 204, 121,map(stepsb,0,LIFETIMEb,200,0));
           }
 
-          boolean isAlive(){
-            return alive;
-          }
+
+          scale(map(stepsb,0,LIFETIMEb,0,2));
+          //rotate(radians(steps*2));// spin the degrees of steps times 2
+          ellipse(0,0,sizeb,sizeb);
+          popMatrix();
         }
+
+        boolean isAliveb(){
+          return aliveb;
+        }
+      }
+
       </script>
       <canvas id="sketch" ></canvas>
     </div>

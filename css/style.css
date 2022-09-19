@@ -151,7 +151,7 @@
 			z-index: 2;
 			display: flex;
 			letter-spacing: -1px;
-			font-size: 3rem;
+			font-size: 2rem;
 		}
 		nav li{
 			margin: 0 0;
@@ -173,7 +173,7 @@
 		}
 		nav ul{
 			justify-content: space-evenly;
-			font-size: 2rem;
+			font-size: 1.6rem;
 			font-family: var(--bold-font);
 			letter-spacing: -.5px;
 			display: flex;
@@ -697,6 +697,7 @@
 	}
 	nav ul{
 		width: auto;
+		font-size: 2rem;
 	}
 	.hero{
 		height: 90vh;

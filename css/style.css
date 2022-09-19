@@ -32,7 +32,7 @@
 		select:-webkit-autofill:hover,
 		select:-webkit-autofill:focus {
 		  border: none;
-		  -webkit-text-fill-color: var(--color-secondary);
+		  -webkit-text-fill-color: var(--color-accent);
 		  -webkit-box-shadow: 0 0 0px 1000px var(--color-main) inset;
 		  transition: background-color 5000s ease-in-out 0s;
 		}
@@ -67,13 +67,13 @@
 			--basic-font: 'Avenir LT W05_95 Black',sans-serif;
 			--body-font: 'Avenir LT W05_55 Roman',serif;
 			--decor-font: 'Avenir LT W05_95 Black',serif; /*'Gelica W05 Medium'*/
-			--color-main: #4f996e; /*    OLD:pink #ffd4f1  purp 255 212 241  pink FFCDE1 255,205,225 */
-			--color-lighten: #69b788;
-			--color-secondary: #d2ff8a; /*  Blue 00302f dark purp #754864 117 72 100  OLD: orange FFCD78 255,205,120  */
-			--color-background: #fffffa; /*white 255               OLD: cream #FFFAF0  255,250,240 */
+			--color-main: #4f996e; /* Main Seafoam*/
+			--color-lighten: #69b788;/* Light Seafoam*/
+			--color-accent: #d2ff8a; /* Lime  */
+			--color-background: #fffffa; /*Off White */
 		}
 		.secondary{
-			color: var(--color-secondary);
+			color: var(--color-accent);
 		}
 		main{
 			max-width: 1000px;
@@ -103,7 +103,7 @@
 			text-decoration: none;
 		}
 		h4{
-			color: var(--color-secondary);
+			color: var(--color-accent);
 		}
 
 		.mobile-only {
@@ -126,7 +126,7 @@
 
 /*----CURSOR--------------------------------------------------------*/
 		html{
-			color: var(--color-secondary);
+			color: var(--color-main);
 			font-family: var(--basic-font);
 			font-size: 16px;
 			scroll-behavior: smooth;
@@ -159,17 +159,17 @@
 			border-top: 2px solid var(--color-main);
 		}
 		nav li:hover{
-			border-top: 2px solid var(--color-secondary);
+			border-top: 2px solid var(--color-accent);
 		}
 		.current{
-			border-top: 2px solid var(--color-secondary);
-			color: var(--color-secondary);
+			border-top: 2px solid var(--color-accent);
+			color: var(--color-accent);
 		}
 		nav a{
 			color: var(--color-background);
 		}
 		nav a:hover{
-			color: var(--color-secondary);
+			color: var(--color-accent);
 		}
 		nav ul{
 			justify-content: space-evenly;
@@ -264,7 +264,7 @@
 		}
 
 		.p-title{
-			color: var(--color-secondary);
+			color: var(--color-main);
 			font-family: var(--bold-font);
 			font-size: 3rem;
 			padding: 3rem 0 2rem 0;
@@ -276,7 +276,7 @@
 		}
 		/*For Phad*/
 		.sect-title{
-			color: var(--color-secondary);
+			color: var(--color-main);
 			padding: 1rem;
 		}
 		.intro-pic{
@@ -322,7 +322,7 @@
 			padding: 0 .5rem;
 			font-family: var(--body-font);
 			font-size: 1rem;
-			color: var(--color-secondary);
+			color: var(--color-main);
 		}
 		input:focus, textarea:focus{
 			outline: none;
@@ -343,7 +343,7 @@
 		}
 
 		.mit-button{
-			background-color: var(--color-secondary);
+			background-color: var(--color-accent);
 			color: var(--color-background);
 			font-size: 1.2rem;
 			margin: 1rem 0;
@@ -379,7 +379,7 @@
 			margin: 0 .2rem;
 		}
 		.miscs a:hover{
-			color: var(--color-secondary);
+			color: var(--color-accent);
 		}
 		.embed-container {
 			 position: relative;
@@ -423,7 +423,7 @@
 		 }
 		 .flippin:hover{
 			 color: var(--color-main);
-			 background-color: var(--color-secondary);
+			 background-color: var(--color-accent);
 		 }
 		 .flri{
 			 float: right;
@@ -545,7 +545,7 @@
 
 		/* On hover, add a black background color with a little bit see-through */
 		.prev:hover, .next:hover {
-		  background-color: var(--color-secondary);
+		  background-color: var(--color-accent);
 			color: var(--color-main);
 		}
 
@@ -572,7 +572,7 @@
 		}
 		/* The dots/bullets/indicators */
 		.active, .dot:hover {
-		  background-color: var(--color-secondary);
+		  background-color: var(--color-accent);
 		}
 
 		/* Fading animation */
@@ -688,7 +688,7 @@
 	p{
 		line-height: 1.5;
 		padding: 1rem 0;
-		font-family: var(--basic-font);
+		font-family: var(--body-font);
 	}
 
 	/*HEADER*/
@@ -751,7 +751,7 @@
 	}
 
 	.special-bg{
-		background-color: var(--color-secondary);
+		background-color: var(--color-accent);
 	}
 
 

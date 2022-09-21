@@ -5,7 +5,7 @@ SOURCES -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Juliette Bricker | Toronto & Saskatoon Based Designer</title>
+    <title>Juliette Bricker | Experiential Designer from Saskatoon Canada</title>
     <link rel="icon" href="../icons/favicon.png">
     <link href="https://fast.fonts.net/cssapi/7b6fce8a-1d50-49d6-9271-b3b14a0ac385.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/flexboxgrid.css">
@@ -22,6 +22,7 @@ SOURCES -->
               <a href="../index.html#my-work"><li>work</li></a>
               <li class="current">about</li>
               <a href="contact.html"><li>contact</li></a>
+              <a href="JulietteBricker-Resume.pdf" download><li>resume</li></a>
             </ul>
         </nav>
       </header>
@@ -33,19 +34,19 @@ SOURCES -->
             </div> -->
             <div class="col-xs-12 col-sm-5">
               <div class="about-pic">
-              <img src="../images/profile.png" alt="Photo of Juliette Bricker outside in a winter coat" >
+              <img src="../images/aboutpic.png" alt="Photo of Juliette Bricker outside in a winter coat" >
               </div>
             </div>
             <div class="col-xs-12 col-sm-7 about-body">
               <h2 class="about-title">About Me!</h2>
-              <p class="padme">Hi I'm Juliette. After being born and raised in Saskatoon, Saskatchewan I decided to venture off to the city of Toronto to attend the design program at York University and Sheridan College.
-              I have a strong thirst for knowledge which has led me to learn about many different streams of design. My favourite kinds of jobs involve difficult problem solving, hands on work, or improving the world we live in.
+              <p class="padme">Hi I'm Juliette. After growing up in Saskatoon and getting my Honours Bachelor of Design in Toronto, I decided to venture off to the Netherlands to improve my Dutch and learn more about the country's amazing design culture.
+              After a month of travellling on my own I have decided to settle in the Netherlands for the next year by getting my working holiday visa as of September 2022.
               </p>
               <p class="padme">
-                One of the most important things about being a good designer is having a focused work ethic and good character. I think it is important to build soft skills along with technical ones.
+                I have a strong thirst for knowledge which has led me to learn about many different streams of design. My favourite kinds of jobs involve difficult problem solving, hands on work, design research and improving the world we live in. That is why I consider myself to be best described as an information and experiential designer. My goal is to explore the country and visit as many design exhibits as I can and hopefully get the chance to work with a studio in Noord Brabant or Zoud Holland.
               </p>
               <p class="padme">
-                When I'm not working on or reading about design, I'm usually off making programs on processing, roller skating, doing yoga, and painting. As a huge music lover, I enjoy listening to records and playing my guitar. I love learning about philosophy and spending time at the library (or I used to).  I also like to stay active by going to the gym and canoeing in the warmer months. I think my love for many things is what has led me to be a designer since design is something that touches every facet of our lives.
+                When I'm not working on or reading about design, I'm usually reading about green energy, playing with code, doing yoga, or out rock climbing. As a huge music lover, I enjoy listening to records and playing my guitar. I love learning about philosophy and spending time at the library exploring books and like to stay active by going to the gym. I think my love for many things is what has led me to be a designer since design is something that touches every facet of our lives.
                </p>
             </div>
           </div>
@@ -70,7 +71,7 @@ SOURCES -->
             <div class="socials flexin col-xs-6">
               <a class="my-icon" href="https://www.linkedin.com/in/juliette-bricker-a51b43160/" target="_blank" rel="noopener noreferrer"><img src="../icons/link.png" alt="Linkedin Link" ></a>
               <a class="my-icon" href="https://the-dots.com/users/juliette-bricker-862649" target="_blank" rel="noopener noreferrer"><img src="../icons/dots.png" alt="The Dots Link" ></a>
-              <a class="my-icon" href="https://www.instagram.com/juliettebricker/" target="_blank" rel="noopener noreferrer"><img src="../icons/insta.png" alt="Instagram link" ></a>
+              <a class="my-icon" href="https://vimeo.com/juliettebricker" target="_blank" rel="noopener noreferrer"><img src="../icons/Vimeo.png" alt="Vimeo link" ></a>
             </div>
             <p class="credit end-xs col-xs-6 ">Coded with endless cups of Earl Grey tea. <br> © Juliette Bricker 2021</p>
           </div>
@@ -82,16 +83,22 @@ SOURCES -->
     <!-- Processing Background -->
     <div>
       <script type="text/processing">
+      ArrayList <Particleb> particlesb = new ArrayList<Particleb>();//Generate new particles in a list
+      boolean cycleb = true;
+
       ArrayList <Particle> particles = new ArrayList<Particle>();//Generate new particles in a list
       boolean cycle = true;
+
       void setup() {
         size(2000, 5000);
         noStroke();
         rectMode(CENTER);
       }
+
+
       void draw() {
-        background(255,255,255);
-        // continually add new particles
+        background(255,255,250);
+
         particles.add(new Particle());
         for ( int i = 0; i< particles.size(); i++) {
           if (particles.get(i).isAlive()==false) {
@@ -100,7 +107,18 @@ SOURCES -->
           particles.get(i).display();
           particles.get(i).move();//return a particle object
         }
+
+        // continually add new particles
+        particlesb.add(new Particleb());
+        for ( int j = 0; j< particlesb.size(); j++) {
+          if (particlesb.get(j).isAliveb()==false) {
+            particlesb.remove(j);
+          }// remove particles after lifetime runs out
+          particlesb.get(j).displayb();
+          particlesb.get(j).moveb();//return a particle object
+        }
       }
+
       void mouseClicked(){
         if( cycle == true){
           cycle = false;
@@ -109,6 +127,17 @@ SOURCES -->
           cycle = true;
         }
       }
+
+
+      void mouseClicked(){
+        if( cycleb == true){
+          cycleb = false;
+        }
+        else{
+          cycleb = true;
+        }
+      }
+
       class Particle{
         //Properties
         PVector location;
@@ -138,10 +167,10 @@ SOURCES -->
           pushMatrix();
           translate(location.x, location.y);
           if (cycle == true){
-            fill(145, 255, 251,map(steps,0,LIFETIME,200,0));
+            fill(210, 255, 138,map(steps,0,LIFETIME,200,0));
           }
           else{
-            fill(145, 255, 251,map(steps,0,LIFETIME,200,0));
+            fill(210, 255, 138,map(steps,0,LIFETIME,200,0));
           }
 
 
@@ -155,6 +184,54 @@ SOURCES -->
           return alive;
         }
       }
+
+      class Particleb{
+        //Properties
+        PVector locationb;
+        PVector velocityb;
+        int sizeb;// dimensions AKA size of particle
+        boolean aliveb; // Boolean used to detect whether a particle is alive and if not remove it
+        float LIFETIMEb = random(10,600); // how many frames a particle lives
+        int stepsb;// counts frames
+        //Constructor
+        Particleb(){
+          velocityb = new PVector(random(-1,1), random(-1,1));
+          locationb = new PVector(random(0,width), random(0,height)); //location initialized
+          sizeb = 20;
+          stepsb = 0;
+          aliveb = true;// when created the particle is alive
+        }
+        //Functions
+        void moveb(){
+          locationb.add(velocityb);
+          stepsb++;// increase steps each time draw loops
+          if(stepsb> LIFETIMEb){// kill it when it hits life time
+            aliveb = false;
+          }
+        }
+        void displayb(){
+          // push and pop so rotation axis is in the middle of the square not the top corner
+          pushMatrix();
+          translate(locationb.x, locationb.y);
+          if (cycleb == true){
+            fill(50, 204, 121,map(stepsb,0,LIFETIMEb,200,0));
+          }
+          else{
+            fill(50, 204, 121,map(stepsb,0,LIFETIMEb,200,0));
+          }
+
+
+          scale(map(stepsb,0,LIFETIMEb,0,2));
+          //rotate(radians(steps*2));// spin the degrees of steps times 2
+          ellipse(0,0,sizeb,sizeb);
+          popMatrix();
+        }
+
+        boolean isAliveb(){
+          return aliveb;
+        }
+      }
+
       </script>
       <canvas id="sketch" ></canvas>
     </div>

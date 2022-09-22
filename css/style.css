@@ -290,7 +290,7 @@
 		}
 		.p-subs h2{
 			padding: 0 10px;
-			color: var(--color-main);
+			color: var(--color-lighten);
 			font-size: 1rem;
 		}
 		/*For Phad*/
@@ -448,6 +448,8 @@
 			 float: right;
 		 }
 
+		
+
 
 /*----ABOUT--------------------------------------------------------*/
 		.about-pic{
@@ -485,7 +487,7 @@
 			margin-left: auto;
 		}
 		.foot-text{
-			padding: 2% 0 30px 0;
+			padding: 2% 0 5px 0;
 		}
 		.contact-foot{
 			font-family: var(--bold-font);
@@ -499,13 +501,19 @@
 			margin-right: auto;
 			padding-top: 10px;
 		}
+		.footer-link{
+			padding-bottom: 20px;
+		}
 		.footer-link ul{
-			justify-content: space-evenly;
+			display: block;
 		}
 		.footer-link-rows{
 			padding: 10, 0, 10, 0;
 		}
 
+		.footer-nav-chunks{
+			padding-top: 20px;
+		}
 
 		.socials{
 			padding-top: 20px;
@@ -689,9 +697,11 @@
 		display: block;
 	}
 
-
 	.monocard{
 		height: 320px;
+	}
+	.p-subs h2{
+		margin-bottom: 8px;
 	}
 
 	.monocard:hover + .hide {
@@ -775,7 +785,7 @@
 		margin: 4rem 0 1rem .5rem;
 	}
 	.sect-title{
-		color: var(--color-background);
+		color: var(--color-main);
 		padding: 1rem;
 	}
 	.intro-pic{
@@ -805,6 +815,10 @@
 
 	footer p{
 		font-size: 2rem;
+	}
+
+	.footer-link ul{
+		display: block;
 	}
 }
 /*----DESKTOP--------------------------------------------------------*/

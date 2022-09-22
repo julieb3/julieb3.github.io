@@ -292,6 +292,7 @@
 			padding: 0 10px;
 			color: var(--color-lighten);
 			font-size: 1rem;
+			margin-bottom: 8px;
 		}
 		/*For Phad*/
 		.sect-title{
@@ -822,6 +823,10 @@
 
 	.footer-link ul{
 		display: block;
+	}
+
+	.p-subs h2{
+		margin-bottom: 2px;
 	}
 }
 /*----DESKTOP--------------------------------------------------------*/

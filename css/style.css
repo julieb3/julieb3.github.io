@@ -448,7 +448,7 @@
 			 float: right;
 		 }
 
-		
+
 
 
 /*----ABOUT--------------------------------------------------------*/
@@ -546,12 +546,15 @@
 
 	/*Slideshow*/
 
-		.mySlides {display: none}
+		.mySlides {
+			display: none
+		}
 		.slidepic{
 			vertical-align: middle;
 			width: 100%;
 			margin: 0 0;
 			padding: .5rem 0;
+
 		}
 			/* Slideshow container */
 		.slideshow-container {

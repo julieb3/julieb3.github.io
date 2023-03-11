@@ -64,13 +64,13 @@
 /*----BASICS--------------------------------------------------------*/
 		:root {
 			--bold-font: 'Avenir LT W05_95 Black',sans-serif;  /*Options: 'Avenir LT W05_95 Black''Avenir LT W05_85 Heavy''Avenir LT W05_55 Roman'*/
-			--basic-font: 'Avenir LT W05_95 Black',sans-serif;
+			--basic-font: 'Avenir LT W05_85 Heavy',sans-serif;
 			--body-font: 'Avenir LT W05_55 Roman',serif;
 			--decor-font: 'Avenir LT W05_95 Black',serif; /*'Gelica W05 Medium'*/
-			--color-main: #4f996e; /* Main Seafoam*/
-			--color-lighten: #69b788;/* Light Seafoam*/
-			--color-accent: #d2ff8a; /* Lime  */
-			--color-background: #fffffa; /*Off White */
+			--color-main: #202020; /* Main Seafoam*/
+			--color-lighten: #303030;/* Light Seafoam*/
+			--color-accent: #cbffa4; /* Lime  */
+			--color-background: #e9e9e9; /*Off White */
 		}
 		.secondary{
 			color: var(--color-accent);
@@ -139,11 +139,6 @@
 
 
 
-		.bigboi{
-			font-size: 32px;
-			padding-top: 10px;
-			color: #69b788;
-		}
 
 /*----CURSOR--------------------------------------------------------*/
 		html{
@@ -151,6 +146,7 @@
 			font-family: var(--basic-font);
 			font-size: 16px;
 			scroll-behavior: smooth;
+			background-color: var(--color-background);
 		}
 		html,body{
 			cursor: url(../icons/my-cursor.png) 10 10, pointer;
@@ -166,19 +162,22 @@
 /*HEADER--------------------------------------------------------*/
 		nav {
 			position: relative;
-			background-color: var(--color-main);
+			background-color: var(--color-lighten);
 			z-index: 2;
-			display: flex;
+			display: block;
 			letter-spacing: -1px;
 			font-size: 2rem;
+			font-family: var(--bold-font);
 		}
 		nav li{
 			margin: 0 0;
-			padding: 10px 0 12px 0;
-			border-top: 2px solid var(--color-main);
+			padding: 10px 0 10px 0;
+			/* border-top: 2px solid var(--color-main); */
+			text-align: center;
+			list-style: none
 		}
 		nav li:hover{
-			border-top: 2px solid var(--color-accent);
+			/* border-top: 2px solid var(--color-accent); */
 		}
 		.current{
 			border-top: 2px solid var(--color-accent);
@@ -192,41 +191,87 @@
 		}
 		nav ul{
 			justify-content: space-evenly;
-			font-size: 1.6rem;
-			font-family: var(--bold-font);
+			font-size: 1.4rem;
+			font-family: var(--basic-font);
 			letter-spacing: -.5px;
 			display: flex;
 			width: 100%;
 			margin-left: auto;
-			margin-right: auto;
+		}
+
+		.tracking{
+			letter-spacing: 2px;
+		}
+		.homelink-center{
+			text-align: center;
+			background-color: var(--color-main);
 		}
 
 		.hero{
-			height: 60vh;
+			height: 450px;
 		}
-		.hero-content{
-			padding-top: 15vh;
-		}
+
 		.subhead{
 			margin: 1rem 0;
 			width: 250px;
 			/* font-size: 1.1rem; */
 			/* padding-left: 8px; */
 		}
-		.my-name{
-			color: var(--color-main);
-			font-family: var(--basic-font);
-			font-size: 4.4rem;
-			letter-spacing: 2px;
-		}
-
-		.see-more{
-			padding-top: 10vh;
+		.hero-content{
 			margin-left: auto;
 			margin-right: auto;
 		}
+		.hero-title{
+			padding-top: 40px;
+			margin-bottom: 40px;
+			text-align: left;
+		}
+		.hero-title h1{
+			color: #87D445;
+			font-family: var(--basic-font);
+			font-size: 3rem;
+			letter-spacing: 2px;
+			line-height: 3.5rem;
+		}
+		.subhero{
+			padding: 10 5 30 5;
+			text-align: left;
+		}
+
+		.subhero h2{
+			color: #595959;
+			font-size: 1.6rem;
+			line-height: normal;
+			font-family: var(--basic-font);
+		}
+		/* .home-introtitle{
+			text-align: center;
+			font-family: var(--bold-font);
+			font-size: 2rem;
+			color: var(--color-background);
+			background-color: var(--color-lighten);
+			padding: 10px 5px;
+		} */
+
+		.see-more-big{
+			margin-top: 60px;
+		}
+		.see-more{
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			color:  var(--color-lighten);
+			font-family: var(--bold-font);
+			font-size: 1.2rem;
+		}
 		.see-more img{
 			width: 30px;
+			padding-left: 5px;
+		}
+
+		.see-more:hover{
+			/* color: #87D445; */
+			opacity: 0.6;
 		}
 
 
@@ -717,6 +762,10 @@
 	.hide {
 		height: 320px;
 	}
+	.hero{
+		height: 350px;
+	}
+
 }
 /*----TAB and DESKTOP--------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
@@ -741,24 +790,75 @@
 	/*HEADER*/
 	nav li{
 		margin: 0 2rem;
+		padding: 18px 0 20px 0;
+		border-top: 2px solid var(--color-main);
+		list-style: none
+		text-align: center;
 	}
+	nav li:hover{
+		border-top: 2px solid var(--color-accent);
+	}
+nav {
+	position: relative;
+	background-color: var(--color-main);
+	z-index: 2;
+	display: flex;
+	letter-spacing: -1px;
+	font-size: 2rem;
+}
 	nav ul{
 		width: auto;
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
+
+
+	.current{
+		border-top: 2px solid var(--color-accent);
+		color: var(--color-accent);
+	}
+	nav a{
+		color: var(--color-background);
+	}
+	nav a:hover{
+		color: var(--color-accent);
+	}
+
+
 	.hero{
-		height: 90vh;
+		height: 600px;
 	}
-	.my-name{
-		font-size: 6rem;
+	.hero-title h1{
+		font-size: 4rem;
 		letter-spacing: 2px;
+		text-align: left;
+		line-height: 4.6rem;
+		max-width: 600px;
+		margin-left: 10px;
 	}
 	.hero-content{
-		padding-top: 30vh;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-title{
+		padding-top: 20vh;
+	}
+	.subhero{
+		padding-top: 40px;
+		font-size: 32px;
+		line-height: normal;
 	}
 	.subhead{
 		font-size: 2rem;
 		width: 440px;
+	}
+	.subhero h2{
+		font-size: 1.6rem;
+	}
+
+	.see-more-big{
+		margin-top: 120px;
 	}
 	.see-more{
 		padding-top: 25vh;
@@ -767,6 +867,19 @@
 		width: 25px;
 	}
 
+
+
+
+
+
+
+
+
+
+
+	.homelink-center{
+		background-color: var(--color-main);
+	}
 	/*PAGES*/
 	.p-title{
 		font-size: 4rem;
@@ -844,6 +957,5 @@
 	.hide {
 		height: 600px;
 	}
-
 
 }

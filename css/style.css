@@ -76,13 +76,11 @@
 			color: var(--color-accent);
 		}
 		main{
-			max-width: 1000px;
+			max-width: 1300px;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		section{
-			margin: 1rem 0;
-		}
+
 		* {
 		    box-sizing: border-box;
 		}
@@ -321,17 +319,43 @@
 		.padfix{
 			padding-top: 8px;
 		}
+		.card-sects{
+			max-width: 1000px;
+		}
 
 /*----PAGES--------------------------------------------------------*/
 		.smaller{
 			max-width: 800px;
 		}
 
+		.proj-subA{
+			font-size: 1rem;
+
+		}
+		.proj-subB{
+			font-size: 1rem;
+			padding-left: 10px;
+
+			color: var(--color-lighten);
+			opacity: 0.6;
+		}
+
+		.proj-info{
+			padding: 20px 10px 0 10px;
+		}
+
+		.proj-descript{
+			padding: 0 8px;
+		}
+		p{
+			font-size: 14px;
+		}
+
 		.p-title{
 			color: var(--color-main);
 			font-family: var(--bold-font);
-			font-size: 3rem;
-			padding: 3rem 0 2rem 0;
+			font-size: 2rem;
+			padding: 1rem 0;
 		}
 		.p-subs h2{
 			padding: 0 10px;
@@ -778,13 +802,12 @@
 	}
 
 
-	section{
-		margin: 0 0;
-	}
+
 	p{
 		line-height: 1.5;
-		padding: 1rem 0;
+		/* padding: 1rem 0; */
 		font-family: var(--body-font);
+		font-size: 18px;
 	}
 
 	/*HEADER*/
@@ -873,7 +896,29 @@ nav {
 
 
 
+	.proj-subA{
+		font-size: 1.2rem;
+		padding-bottom: 10px;
+	}
+	.proj-subB{
+		font-size: 1.2rem;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		color: var(--color-lighten);
+		opacity: 0.6;
+	}
 
+	.proj-info{
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+	}
+	.p-title{
+		color: var(--color-main);
+		font-family: var(--bold-font);
+		font-size: 3rem;
+		padding: 3rem 0 2rem 0;
+	}
 
 
 

@@ -465,7 +465,8 @@
 			font-size: 2rem;
 		}
 		.miscs a{
-			margin: 0 .2rem;
+			margin: 0 2px;
+			padding-bottom: 10px;
 		}
 		.miscs a:hover{
 			color: var(--color-accent);
@@ -492,7 +493,7 @@
 		 }
 		 .caption{
 			 font-size: 1rem;
-			 margin: -.5rem 0 .5rem .2rem;
+			 margin: -10px 0 .5rem .2rem;
 		 }
 		 .vimeo-bspace{
 			 margin-bottom: 4rem;
@@ -930,7 +931,7 @@ nav {
 		margin-top: -40px;
 	}
 	.caption{
-		margin: -2rem 0 .5rem .2rem;
+		margin: -10px 0 .5rem .2rem;
 	}
 
 	.about-pic{

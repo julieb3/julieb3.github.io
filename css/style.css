@@ -321,6 +321,12 @@
 		}
 		.card-sects{
 			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		.halp{
+				padding: 0 .6rem 0 1rem;
 		}
 
 /*----PAGES--------------------------------------------------------*/
@@ -554,7 +560,7 @@
 		}
 		.footback{
 			background-color: var(--color-main);
-			padding: .5rem;
+			padding: 1rem;
 		}
 
 		.spotify{

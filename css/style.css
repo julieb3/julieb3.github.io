@@ -330,19 +330,19 @@
 
 		.proj-subA{
 			font-size: 1rem;
-
+			/* padding-left: 10px; */
 		}
 		.proj-subB{
 			font-size: 1rem;
 			padding-left: 10px;
-
 			color: var(--color-lighten);
 			opacity: 0.6;
 		}
 
 		.proj-info{
-			padding: 20px 10px 0 10px;
+			padding: 20px 10px 10px 20px;
 		}
+
 
 		.proj-descript{
 			padding: 0 8px;
@@ -477,7 +477,8 @@
 			 max-width: 100%;
 		 }
 		 .dist{
-			 padding-bottom: 100%;
+			 padding-bottom: 60%;
+			 margin: 5px 0 20px 0;
 		 }
 		 .city{
 			 padding-bottom: 100%;
@@ -523,12 +524,15 @@
 
 /*----ABOUT--------------------------------------------------------*/
 		.about-pic{
-			margin: 0 0 0 0;
+			margin: 25px;
 		}
 
 		.about-title{
 			font-size: 3rem;
 			margin: 0 1rem;
+		}
+		.npg-buts{
+			margin-top: 60px;
 		}
 
 /*----FOOTER--------------------------------------------------------*/
@@ -895,28 +899,21 @@ nav {
 
 
 
-
+/*DESK*/
 	.proj-subA{
 		font-size: 1.2rem;
-		padding-bottom: 10px;
 	}
 	.proj-subB{
 		font-size: 1.2rem;
 		padding-left: 10px;
-		padding-bottom: 10px;
 		color: var(--color-lighten);
 		opacity: 0.6;
 	}
 
-	.proj-info{
-		padding-top: 50px;
-		padding-bottom: 50px;
-
-	}
 	.p-title{
 		color: var(--color-main);
 		font-family: var(--bold-font);
-		font-size: 3rem;
+		font-size: 4rem;
 		padding: 3rem 0 2rem 0;
 	}
 
@@ -926,20 +923,18 @@ nav {
 		background-color: var(--color-main);
 	}
 	/*PAGES*/
-	.p-title{
-		font-size: 4rem;
-		padding: 3rem 0 2rem 0;
-	}
+
 
 	.dist{
 		padding-bottom: 70%;
+		margin-top: -40px;
 	}
 	.caption{
 		margin: -2rem 0 .5rem .2rem;
 	}
 
 	.about-pic{
-		margin: 50px 0 0 0;
+		margin: 50px;
 	}
 
 	.about-title{
@@ -950,11 +945,10 @@ nav {
 		color: var(--color-main);
 		padding: 1rem;
 	}
-	.intro-pic{
+	/* .intro-pic{
 		margin: .5rem 0;
 		padding: 1rem;
-
-	}
+	} */
 
 	.special-bg{
 		background-color: var(--color-accent);

@@ -238,6 +238,10 @@
 			text-align: left;
 		}
 
+		#fix-coding{
+			margin-top: 5px;
+		}
+
 		.subhero h2{
 			color: #595959;
 			font-size: 1.6rem;

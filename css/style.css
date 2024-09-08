@@ -63,10 +63,11 @@
 
 /*----BASICS--------------------------------------------------------*/
 		:root {
-			--bold-font: 'Avenir LT W05_95 Black',sans-serif;  /*Options: 'Avenir LT W05_95 Black''Avenir LT W05_85 Heavy''Avenir LT W05_55 Roman'*/
-			--basic-font: 'Avenir LT W05_85 Heavy',sans-serif;
-			--body-font: 'Avenir LT W05_55 Roman',serif;
-			--decor-font: 'Avenir LT W05_95 Black',serif; /*'Gelica W05 Medium'*/
+			--my-font: "Montserrat", sans-serif;
+			--bold-font: 700;
+			--basic-font: 400;
+			--body-font: 400;
+			--decor-font: 600;
 			--color-main: #202020; /* Main Seafoam*/
 			--color-lighten: #303030;/* Light Seafoam*/
 			--color-accent: #cbffa4; /* Lime  */
@@ -75,6 +76,7 @@
 		.secondary{
 			color: var(--color-accent);
 		}
+
 		main{
 			max-width: 1300px;
 			margin-left: auto;
@@ -86,7 +88,7 @@
 		}
 		p{
 			line-height: 1.5;
-			font-family: var(--body-font);
+			font-weight: var(--body-font);
 			font-size: 1.3rem;
 		}
 		.padme{
@@ -106,14 +108,14 @@
 
 		.alert1{
 			font-size: 3rem;
-			text-align:
+	
 			margin-left: auto;
 			margin-right: auto;
 		}
 
 		.alert2{
 			font-size: 2rem;
-			text-align:
+
 			margin-left: auto;
 			margin-right: auto;
 			color: var(--color-lighten);
@@ -141,7 +143,7 @@
 /*----CURSOR--------------------------------------------------------*/
 		html{
 			color: var(--color-main);
-			font-family: var(--basic-font);
+			font-family: var(--my-font);
 			font-size: 16px;
 			scroll-behavior: smooth;
 			background-color: var(--color-background);
@@ -165,7 +167,7 @@
 			display: block;
 			letter-spacing: -1px;
 			font-size: 2rem;
-			font-family: var(--bold-font);
+			font-weight: var(--bold-font);
 		}
 		nav li{
 			margin: 0 0;
@@ -174,9 +176,9 @@
 			text-align: center;
 			list-style: none
 		}
-		nav li:hover{
-			/* border-top: 2px solid var(--color-accent); */
-		}
+		/* nav li:hover{
+			border-top: 2px solid var(--color-accent);
+		} */
 		.current{
 			border-top: 2px solid var(--color-accent);
 			color: var(--color-accent);
@@ -190,7 +192,7 @@
 		nav ul{
 			justify-content: space-evenly;
 			font-size: 1.4rem;
-			font-family: var(--basic-font);
+			font-weight: var(--basic-font);
 			letter-spacing: -.5px;
 			display: flex;
 			width: 100%;
@@ -226,7 +228,7 @@
 		}
 		.hero-title h1{
 			color: #60ba14;
-			font-family: var(--basic-font);
+			font-weight: var(--bold-font);
 			font-size: 3rem;
 			letter-spacing: 2px;
 			line-height: 3.5rem;
@@ -240,7 +242,7 @@
 			color: #595959;
 			font-size: 1.6rem;
 			line-height: normal;
-			font-family: var(--basic-font);
+			font-weight: var(--basic-font);
 		}
 		/* .home-introtitle{
 			text-align: center;
@@ -259,7 +261,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			color:  var(--color-lighten);
-			font-family: var(--bold-font);
+			font-weight: var(--bold-font);
 			font-size: 1.2rem;
 		}
 		.see-more img{
@@ -306,7 +308,7 @@
 		.hide h3{
 			color: var(--color-background);
 			font-size: 2.5rem;
-			font-family: var(--bold-font);
+			font-weight: var(--bold-font);
 		}
 		.hide h4{
 			font-size: 1.5rem;
@@ -363,7 +365,7 @@
 
 		.p-title{
 			color: var(--color-main);
-			font-family: var(--bold-font);
+			font-weight: var(--bold-font);
 			font-size: 2rem;
 			padding: 1rem 0;
 		}
@@ -395,7 +397,7 @@
 			max-width: 800px;
 		}
 		.my-form h2{
-			font-family: var(--basic-font);
+			font-weight: var(--basic-font);
 			/* color: var(--color-background); */
 			font-size: 2.8rem;
 			padding: 1rem 2rem;
@@ -419,7 +421,7 @@
 			border: none;
 			background-color: var(--color-main);
 			padding: 0 .5rem;
-			font-family: var(--body-font);
+			font-weight: var(--body-font);
 			font-size: 1rem;
 			color: var(--color-main);
 		}
@@ -454,7 +456,7 @@
 			color: var(--color-main);
 		}
 		::placeholder {
-			font-family: var(--body-font);
+			font-weight: var(--body-font);
 			color: var(--color-lighten);
 		}
 		.tightright{
@@ -515,7 +517,7 @@
 			 text-align: center;
 			 margin: 0 3rem;
 			 padding: .5rem;
-			 font-family: var(--basic-font);
+			 font-weight: var(--basic-font);
 			 color: var(--color-background);
 			 background-color: var(--color-main);
 			 outline: none;
@@ -575,13 +577,13 @@
 			padding: 2% 0 5px 0;
 		}
 		.contact-foot{
-			font-family: var(--bold-font);
+			font-weight: var(--body-font);
 			margin-top: 10px;
 		}
 
 		.footer-link li{
 			color: var(--color-background);
-			font-family: var(--body-font);
+			font-weight: var(--body-font);
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 10px;
@@ -830,7 +832,7 @@
 		margin: 0 2rem;
 		padding: 18px 0 20px 0;
 		border-top: 2px solid var(--color-main);
-		list-style: none
+		list-style: none;
 		text-align: center;
 	}
 	nav li:hover{
@@ -923,7 +925,7 @@ nav {
 
 	.p-title{
 		color: var(--color-main);
-		font-family: var(--bold-font);
+		font-weight: var(--bold-font);
 		font-size: 4rem;
 		padding: 3rem 0 2rem 0;
 	}

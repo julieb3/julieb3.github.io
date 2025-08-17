@@ -1,18 +1,7 @@
 /* PORTFOLIO STYLE SHEET*/
 
 /*RESET*/
-		html, body, div, span, applet, object, iframe,
-		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-		a, abbr, acronym, address, big, cite, code,
-		del, dfn, em, img, ins, kbd, q, s, samp,
-		small, strike, strong, sub, sup, tt, var,
-		b, u, i, center,
-		dl, dt, dd, ol, ul, li,
-		fieldset, form, label, legend,
-		table, caption, tbody, tfoot, thead, tr, th, td,
-		article, aside, canvas, details, embed,
-		figure, figcaption, footer, header, hgroup,
-		menu, nav, output, ruby, section, summary,
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 		time, mark, audio, video {
 			margin: 0;
 			padding: 0;
@@ -22,14 +11,7 @@
 			vertical-align: baseline;
 		}
 /*AUTOFILL RESET*/
-		input:-webkit-autofill,
-		input:-webkit-autofill:hover,
-		input:-webkit-autofill:focus,
-		textarea:-webkit-autofill,
-		textarea:-webkit-autofill:hover,
-		textarea:-webkit-autofill:focus,
-		select:-webkit-autofill,
-		select:-webkit-autofill:hover,
+		input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover,
 		select:-webkit-autofill:focus {
 		  border: none;
 		  -webkit-text-fill-color: var(--color-accent);
@@ -61,501 +43,251 @@
 		}
 
 
-/*----BASICS--------------------------------------------------------*/
+/*----ROOT--------------------------------------------------------*/
 		:root {
-			--my-font: "Montserrat", sans-serif;
-			--bold-font: 700;
-			--basic-font: 400;
-			--body-font: 400;
-			--decor-font: 600;
-			--color-main: #202020; /* Main Seafoam*/
-			--color-lighten: #303030;/* Light Seafoam*/
-			--color-accent: #cbffa4; /* Lime  */
-			--color-background: #e9e9e9; /*Off White */
+			--myFont: "Montserrat", sans-serif;
+			--light: 400;
+			--medium: 600;
+			--bold: 700;
+
+			--colMain: #121212; /* black*/
+			--colLight: #bebebe;/* */
+			--colAccent: #504BE8; /*  */
+			--colBack: #e4e4e4; /*Off White */
+
+			--col1: #121212;
+			--col1-Dark: #868832;
+			--col2: #EB522E;
+			--col2-Dark: #ba4126;
+			--col3: #73B576;
+			--col3-Dark: #49804c;
+			--col4: #B571C2;
+			--col4-Dark: #84518e;
+	
 		}
 		.secondary{
-			color: var(--color-accent);
-		}
-
-		main{
-			max-width: 1300px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		* {
-		    box-sizing: border-box;
-		}
-		p{
-			line-height: 1.5;
-			font-weight: var(--body-font);
-			font-size: 1.3rem;
-		}
-		.padme{
-			padding: 1rem 0;
-		}
-		img{
-		  width: 100%;
-		  height: auto;
-		}
-		a {
-			color: var(--color-main);
-			text-decoration: none;
-		}
-		h4{
-			color: var(--color-accent);
-		}
-
-		.alert1{
-			font-size: 3rem;
-	
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.alert2{
-			font-size: 2rem;
-
-			margin-left: auto;
-			margin-right: auto;
-			color: var(--color-lighten);
-			margin-top: 5px;
-		}
-
-		.alerting{
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.mobile-only {
-		  display: block;
-		}
-		.desktop-only {
-		  display: none;
-		}
-		.flexin{
-			display: flex;
+			color: var(--colAccent);
 		}
 
 
+/*----BASICS--------------------------------------------------------*/
+
+body {
+    font-family: var(--myFont);
+    margin: 0;
+	color: var(--colMain);
+    background: var(--colBack);
+	line-height: 150%;
+}
+.content{
+		max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.backcontent{
+	background-image: url('../images/spraypaint.png'); /* path to your image */
+	background-size: cover;       /* image cover the entire div */
+	background-position: center;  /* centers the image */
+	background-repeat: no-repeat; /* prevents tiling */
+	padding: 50px;                /* optional: add space inside the div */
+	height:auto;
+}
+.pTitle{
+	margin-top: 50px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: left;
+	color: var(--col1);
+	max-width: 600px;
+}
+.pSub{
+	padding:10px 0;
+	text-align: left;
+	max-width: 600px;
+
+}
+strong{
+	font-weight: 600;
+}
+
+.academic-box{
+	text-align: left;
+}
+.academic-box h2{
+	margin-top: 50px;
+	padding: 10px 0;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: left;
+	color: var(--col1);
+	max-width: 600px;
+}
+.aboutSpot{
+	margin: 20px 0;
+}
+.academic-box ul{
+	max-width: 800px;
+}
+a{
+	color: var(--colAccent);
+	text-decoration: underline;
+}
 
 
-/*----CURSOR--------------------------------------------------------*/
-		html{
-			color: var(--color-main);
-			font-family: var(--my-font);
-			font-size: 16px;
-			scroll-behavior: smooth;
-			background-color: var(--color-background);
-		}
-		html,body{
-			cursor: url(../icons/my-cursor.png) 10 10, pointer;
-			cursor: url(../icons/my-cursor.png) 10 10, pointer;
-			cursor: -webkit-image-set(url(../icons/my-cursor.png) 1x, url(../icons/my-cursor@2x.png) 2x) 0 0, pointer;
-			}
-		a{
-			cursor: url(../icons/my-cursor-click.png) 10 10, pointer;
-			cursor: url(../icons/my-cursor-click.png) 10 10, pointer;
-			cursor: -webkit-image-set(url(../icons/my-cursor-click.png) 1x, url(../icons/my-cursor-click@2x.png) 2x) 0 0, pointer;
-		}
+/*----HERO--------------------------------------------------------*/
 
-/*HEADER--------------------------------------------------------*/
-		nav {
-			position: relative;
-			background-color: var(--color-lighten);
-			z-index: 2;
-			display: block;
-			letter-spacing: -1px;
-			font-size: 2rem;
-			font-weight: var(--bold-font);
-		}
-		nav li{
-			margin: 0 0;
-			padding: 10px 0 10px 0;
-			/* border-top: 2px solid var(--color-main); */
-			text-align: center;
-			list-style: none
-		}
-		/* nav li:hover{
-			border-top: 2px solid var(--color-accent);
-		} */
-		.current{
-			border-top: 2px solid var(--color-accent);
-			color: var(--color-accent);
-		}
-		nav a{
-			color: var(--color-background);
-		}
-		nav a:hover{
-			color: var(--color-accent);
-		}
-		nav ul{
-			justify-content: space-evenly;
-			font-size: 1.4rem;
-			font-weight: var(--basic-font);
-			letter-spacing: -.5px;
-			display: flex;
-			width: 100%;
-			margin-left: auto;
-		}
+.myName{
+	/* padding: 10px; */
+	font-size: 24px;
+}
+.myEmail{
+	margin-left: auto;
+}
 
-		.tracking{
-			letter-spacing: 2px;
-		}
-		.homelink-center{
-			text-align: center;
-			background-color: var(--color-main);
-		}
+.topinfo{
+	color: var(--colMain);
+	display: flex;
+}
 
-		.hero{
-			height: 450px;
-		}
+.tagLine{
+	margin: 20px 10px;
+	line-height: 150%;
+	font-weight: var(--bold);
+	font-size: 48px;
+	color: var(--colMain);
+}
+.topic.active-topic {
+  background-color: var(--colAccent);
+  color: white;
+  font-weight: bold;
+}
 
-		.subhead{
-			margin: 1rem 0;
-			width: 250px;
-			/* font-size: 1.1rem; */
-			/* padding-left: 8px; */
-		}
-		.hero-content{
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.hero-title{
-			padding-top: 40px;
-			margin-bottom: 40px;
-			text-align: left;
-		}
-		.hero-title h1{
-			color: #60ba14;
-			font-weight: var(--bold-font);
-			font-size: 3rem;
-			letter-spacing: 2px;
-			line-height: 3.5rem;
-		}
-		.subhero{
-			padding: 10 5 30 5;
-			text-align: left;
-		}
+  /* Top bar with topics */
+  .top-bar {
+    display: flex;
+    width: 100%;
+  }
+  .topic {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: var(--colBack);
+    cursor: pointer;
+    border-right: 1px solid var(--colBack);
+    transition: background 0.3s;
+  }
+  .topic1{
+	    background: var(--colMain);
+  }
+  .topic2{
+	    background: var(--colMain);
+  }
+  .topic3{
+	    background: var(--colMain);
+  }
+  .topic4{
+	    background: var(--colMain);
+  }
+.topic1:hover{
+	    background: var(--colAccent);
+  }
+  .topic2:hover{
+	    background: var(--colAccent);
+  }
+  .topic3:hover{
+	    background: var(--colAccent);
+  }
+  .topic4:hover{
+	    background: var(--colAccent);
+  }
 
-		#fix-coding{
-			margin-top: 5px;
-		}
+    /* Container for all topics */
+  .topics-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
 
-		.subhero h2{
-			color: #595959;
-			font-size: 1.6rem;
-			line-height: normal;
-			font-weight: var(--basic-font);
-		}
-		/* .home-introtitle{
-			text-align: center;
-			font-family: var(--bold-font);
-			font-size: 2rem;
-			color: var(--color-background);
-			background-color: var(--color-lighten);
-			padding: 10px 5px;
-		} */
+  /* Each topic div */
+  .topic-content {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    align-items: center;
+  }
 
-		.see-more-big{
-			margin-top: 60px;
-		}
-		.see-more{
-			margin-top: 20px;
-			margin-left: auto;
-			margin-right: auto;
-			color:  var(--color-lighten);
-			font-weight: var(--bold-font);
-			font-size: 1.2rem;
-		}
-		.see-more img{
-			width: 30px;
-			padding-left: 5px;
-		}
-
-		.see-more:hover{
-			/* color: #87D445; */
-			opacity: 0.6;
-		}
-
-		.lazy-pad{
-			padding-top: 5px;
-		}
-
-/*----HOMEPAGE--------------------------------------------------------*/
-
-	/* Project Cards*/
-
-		.monocard{
-			height: 250px;
-			overflow:hidden;
-			margin: 1rem 0;
-		}
-
-		.monocard:hover + .hide {
-		  display: block;
-			position: relative;
-			margin: -266px 0 1rem 0;
-		}
-		.hide:hover {
-		  display: block;
-			position: relative;
-			margin: -266px 0 1rem 0;
-		}
+  /* Show the active topic */
+  .topic-content.active {
+    display: flex;
+  }
 
 
-		.hide {
-			display: none;
-			height: 250px;
-			overflow: hidden;
-		}
-		.hide h3{
-			color: var(--color-background);
-			font-size: 2.5rem;
-			font-weight: var(--bold-font);
-		}
-		.hide h4{
-			font-size: 1.5rem;
-		}
-		.chunk{
-			position: absolute;
-			text-align: center;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
+  /* Container for vertical squares */
+  .squares-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .square {
+    width: 500px;
+    height: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.3s;
+  } */
 
-		.padfix{
-			padding-top: 8px;
-		}
-		.card-sects{
-			max-width: 1000px;
-			margin-left: auto;
-			margin-right: auto;
+    .square {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .square img {
+    display: block;
+    width: auto;     /* natural size */
+    height: auto;    /* natural size */
+    max-width: 300px; /* optional: limit large images */
+    border-radius: 8px;
+  }
+  .square:hover {
+    transform: scale(1.05);
+  }
 
-		}
-		.halp{
-				margin-top: 30px;
-				padding: 0 .6rem 0 1rem;
-		}
+  /* Popup (modal) styles */
+  .popup {
+    display: none; /* hidden by default */
+    position: fixed;
+	padding: 2px;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .popup-content {
+    background: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 80%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-/*----PAGES--------------------------------------------------------*/
-		.smaller{
-			max-width: 800px;
-		}
-
-		.proj-subA{
-			font-size: 1rem;
-			/* padding-left: 10px; */
-		}
-		.proj-subB{
-			font-size: 1rem;
-			padding-left: 10px;
-			color: var(--color-lighten);
-			opacity: 0.6;
-		}
-
-		.proj-info{
-			padding: 20px 10px 10px 20px;
-		}
-
-
-		.proj-descript{
-			padding: 0 8px;
-		}
-		p{
-			font-size: 14px;
-		}
-
-		.p-title{
-			color: var(--color-main);
-			font-weight: var(--bold-font);
-			font-size: 2rem;
-			padding: 1rem 0;
-		}
-		.p-subs h2{
-			padding: 0 10px;
-			color: var(--color-lighten);
-			font-size: 1rem;
-			margin-bottom: 8px;
-		}
-		/*For Phad*/
-		.sect-title{
-			color: var(--color-main);
-			padding: 1rem;
-		}
-		.intro-pic{
-			margin: .5rem 0;
-		}
-		.special-bg{
-			background-color: var(--color-main);
-		}
-		iframe{
-			margin: .5rem 0;
-		}
-
-		.my-form {
-			margin: 2rem auto;
-		  border-radius: 5px;
-		  background-color: var(--color-main);
-			max-width: 800px;
-		}
-		.my-form h2{
-			font-weight: var(--basic-font);
-			/* color: var(--color-background); */
-			font-size: 2.8rem;
-			padding: 1rem 2rem;
-			justify-content: center;
-
-		}
-		form{
-			width:100%;
-			padding: 1rem 2rem;
-			background-color: var(--color-lighten);
-			border-bottom-right-radius: 8px;
-			border-bottom-left-radius: 8px;
-		}
-		.my-form h3{
-			padding: 1.5rem 0 .8rem 0;
-			font-size: 1.2rem;
-		}
-
-		input, textarea{
-			border-radius: 10px;
-			border: none;
-			background-color: var(--color-main);
-			padding: 0 .5rem;
-			font-weight: var(--body-font);
-			font-size: 1rem;
-			color: var(--color-main);
-		}
-		input:focus, textarea:focus{
-			outline: none;
-		}
-		input{
-			height: 2rem;
-		}
-		textarea{
-			height: 3.5rem;
-			padding-top: .3rem;
-			height: 6rem;
-		}
-		.desk-message{
-			width: 300px;
-		}
-		.mob-message{
-			width: 100%;
-		}
-
-		.mit-button{
-			background-color: var(--color-accent);
-			color: var(--color-background);
-			font-size: 1.2rem;
-			margin: 1rem 0;
-			border-radius: 25px;
-			width: 6rem;
-			height: 2.5rem;
-		}
-		.mit-button:hover{
-			color: var(--color-main);
-		}
-		::placeholder {
-			font-weight: var(--body-font);
-			color: var(--color-lighten);
-		}
-		.tightright{
-			margin-left: auto;
-			padding-right: 1rem;
-		}
-
-
-		.miscs{
-			max-width: 600px;
-			margin: 0 auto;
-		}
-		.miscs img, .miscs iframe{
-			margin: 1rem 0;
-		}
-		.miscs h2{
-			margin: 2rem auto 1rem .5rem;
-			font-size: 2rem;
-		}
-		.miscs a{
-			margin: 0 2px;
-			padding-bottom: 10px;
-		}
-		.miscs a:hover{
-			color: var(--color-accent);
-		}
-		.embed-container {
-			 position: relative;
-			 height: 0;
-			 overflow: hidden;
-			 max-width: 100%;
-		 }
-		 .dist{
-			 padding-bottom: 60%;
-			 margin: 5px 0 20px 0;
-		 }
-		 .city{
-			 padding-bottom: 100%;
-		 }
-		 .embed-container iframe, .embed-container object, .embed-container embed{
-			 position: absolute;
-			 top: 0;
-			 left: 0;
-			 width: 100%;
-			 height: 100%;
-		 }
-		 .caption{
-			 font-size: 1rem;
-			 margin: -10px 0 .5rem .2rem;
-		 }
-		 .vimeo-bspace{
-			 margin-bottom: 4rem;
-		 }
-
-		 .flippin{
-			 width: 8rem;
-			 height: 3rem;
-			 text-align: center;
-			 margin: 0 3rem;
-			 padding: .5rem;
-			 font-weight: var(--basic-font);
-			 color: var(--color-background);
-			 background-color: var(--color-main);
-			 outline: none;
-			 border-radius: none;
-			 border-radius: 6px;
-		 }
-		 .flippin:hover{
-			 color: var(--color-main);
-			 background-color: var(--color-accent);
-		 }
-		 .flri{
-			 float: right;
-		 }
-
-
-
-
-/*----ABOUT--------------------------------------------------------*/
-		.about-pic{
-			margin: 25px;
-		}
-
-		.about-title{
-			font-size: 3rem;
-			margin: 0 1rem;
-		}
-		.npg-buts{
-			margin-top: 60px;
-		}
 
 /*----FOOTER--------------------------------------------------------*/
 		footer{
-			color: var(--color-background);
-			background-color: var(--color-main);
+			color: var(--colBack);
+			background-color: var(--colMain);
 			position:relative;
 			height: 200px;
 			position: relative;
@@ -569,25 +301,21 @@
 				max-width: 1000px;
 		}
 		.footback{
-			background-color: var(--color-main);
+			background-color: var(--colMain);
 			padding: 1rem;
 		}
 
-		.spotify{
-			margin-top: -5%;
-			margin-left: auto;
-		}
 		.foot-text{
 			padding: 2% 0 5px 0;
 		}
 		.contact-foot{
-			font-weight: var(--body-font);
+			/* font-weight: var(--body-font); */
 			margin-top: 10px;
 		}
 
 		.footer-link li{
-			color: var(--color-background);
-			font-weight: var(--body-font);
+			color: var(--colBack);
+			/* font-weight: var(--body-font); */
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 10px;
@@ -619,399 +347,45 @@
 			height:auto;
 			padding: 0 5px;
 		}
-/*----FUNCTIONS--------------------------------------------------------*/
-	/*Processing*/
-		#sketch{
-			left: 0px;
-			top: 0px;
-			z-index: -2;
-			border-color: rgb(255,250,240);
-		}
-		canvas {
-			width: 100%;
-			height: viewport;
-			margin: auto;
-			display: block;
-			position: fixed;
-		}
 
-	/*Slideshow*/
 
-		.mySlides {
-			display: none
-		}
-		.slidepic{
-			vertical-align: middle;
-			width: 100%;
-			margin: 0 0;
-			padding: .5rem 0;
 
-		}
-			/* Slideshow container */
-		.slideshow-container {
-			max-width: 900px;
-		  position: relative;
-		  margin: 1rem auto;
-			/* margin: 1rem 0; */
-		}
 
-		/* Next & previous buttons */
-		.prev, .next {
-			cursor: pointer;
-			position: absolute;
-			top: 50%;
-			width: auto;
-			padding: 16px;
-			margin: -22px 10px 0 10px;
-			background-color: var(--color-main);
-			color: var(--color-background);
-			font-weight: bold;
-			font-size: 18px;
-			transition: 0.6s ease;
-			border-radius: 0 3px 3px 0;
-			user-select: none;
-		}
 
-		/* Position the "next button" to the right */
-		.next {
-		  right: 0;
-		  border-radius: 3px 0 0 3px;
-		}
 
-		/* On hover, add a black background color with a little bit see-through */
-		.prev:hover, .next:hover {
-		  background-color: var(--color-accent);
-			color: var(--color-main);
-		}
 
-		/* Caption text */
-		.text {
-		  font-size: 15px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  bottom: 8px;
+
+		* {
+		    box-sizing: border-box;
+		}
+		p{
+			line-height: 1.5;
+			/* font-weight: var(--body-font); */
+			font-size: 1.3rem;
+		}
+		.padme{
+			padding: 1rem 0;
+		}
+		img{
 		  width: 100%;
-		  text-align: center;
+		  height: auto;
+		}
+	
+		h4{
+			color: var(--colAccent);
 		}
 
-		/* The dots/bullets/indicators */
-		.dot {
-		  cursor: pointer;
-		  height: 15px;
-		  width: 15px;
-		  margin: 0 2px;
-		  background-color: var(--color-main);
-		  border-radius: 50%;
-		  display: inline-block;
-		  transition: background-color 0.6s ease;
-		}
-		/* The dots/bullets/indicators */
-		.active, .dot:hover {
-		  background-color: var(--color-accent);
-		}
 
-		/* Fading animation */
-		.fade {
-		  -webkit-animation-name: fade;
-		  -webkit-animation-duration: 1.5s;
-		  animation-name: fade;
-		  animation-duration: 1.5s;
+		.mobile-only {
+		  display: block;
 		}
-/*
-		@-webkit-keyframes fade {
-		  from {opacity: .4}
-		  to {opacity: 1}
-		}
-
-		@keyframes fade {
-		  from {opacity: .4}
-		  to {opacity: 1}
-		}
-
-		On smaller screens, decrease text size
-		@media only screen and (max-width: 300px) {
-		  .prev, .next,.text {font-size: 11px}
-		} */
-
-	/*Accordion*/
-		/* .accordion {
-		  background-color: var(--color-main);
-		  color: var(--color-background);
-		  cursor: pointer;
-		  padding: 10px;
-		  width: 100%;
-		  border: none;
-		  text-align: left;
-		  font-size: 1rem;
-		  transition: 0.4s;
-			font-family: var(--basic-font);
-		}
-		.accordion:after {
-		  content: "";
-		  display: inline-block;
-		  background-image: url('../icons/dw-ar.png');
-		  background-size: 12px 8px;
-		  width: 12px;
-		  height: 8px;
-		  float: right;
-		  margin-top: 5px;
-		  transform: rotate(180deg);
-		}
-		.accordion.active:after {
-		  transform: rotate(0deg);
-		}
-		.active, .accordion:hover, .accordion:focus {
-		  background-color: var(--color-secondary);
-			outline: none;
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-		}
-		.panel {
-		  padding: 1rem 9px;
+		.desktop-only {
 		  display: none;
-		  background-color: white;
-		  overflow: hidden;
 		}
-		.details{
-		  padding: 1rem;
-			margin: -3px 0 1rem 0;
-			border-bottom-left-radius: 10px;
-			border-bottom-right-radius: 10px;
-		} */
-
-		/*So special is no different than the normal but normal is included in this 480 constraint
-		which was added to make sure the project sub heads float properly. *maybe fix this so the special
-		is applied to the sub heads and not the normal- J*/
-
-@media only screen and (min-width: 480px) {
-	.desktop-only {
-		display: none;
-	}
-	.mobile-only {
-		display: block;
-	}
-
-	.monocard{
-		height: 320px;
-	}
-	.p-subs h2{
-		margin-bottom: 8px;
-	}
-
-	.monocard:hover + .hide {
-		margin: -336px 0 1rem 0;
-	}
-	.hide:hover {
-		margin: -336px 0 1rem 0;
-	}
-	.hide {
-		height: 320px;
-	}
-	.hero{
-		height: 350px;
-	}
-
-}
-/*----TAB and DESKTOP--------------------------------------------------------*/
-@media only screen and (min-width: 768px) {
-	/*BASICS*/
-	.desktop-only {
-		display: block;
-	}
-	.mobile-only {
-		display: none;
-	}
-
-
-
-	p{
-		line-height: 1.5;
-		/* padding: 1rem 0; */
-		font-family: var(--body-font);
-		font-size: 18px;
-	}
-
-	/*HEADER*/
-	nav li{
-		margin: 0 2rem;
-		padding: 18px 0 20px 0;
-		border-top: 2px solid var(--color-main);
-		list-style: none;
-		text-align: center;
-	}
-	nav li:hover{
-		border-top: 2px solid var(--color-accent);
-	}
-nav {
-	position: relative;
-	background-color: var(--color-main);
-	z-index: 2;
-	display: flex;
-	letter-spacing: -1px;
-	font-size: 2rem;
-}
-	nav ul{
-		width: auto;
-		font-size: 1.6rem;
-	}
-
-
-	.current{
-		border-top: 2px solid var(--color-accent);
-		color: var(--color-accent);
-	}
-	nav a{
-		color: var(--color-background);
-	}
-	nav a:hover{
-		color: var(--color-accent);
-	}
-
-
-	.hero{
-		height: 600px;
-	}
-	.hero-title h1{
-		font-size: 4rem;
-		letter-spacing: 2px;
-		text-align: left;
-		line-height: 4.6rem;
-		max-width: 600px;
-		margin-left: 10px;
-	}
-	.hero-content{
-		max-width: 1000px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.hero-title{
-		padding-top: 20vh;
-	}
-	.subhero{
-		padding-top: 40px;
-		font-size: 32px;
-		line-height: normal;
-	}
-	.subhead{
-		font-size: 2rem;
-		width: 440px;
-	}
-	.subhero h2{
-		font-size: 1.6rem;
-	}
-
-	.see-more-big{
-		margin-top: 120px;
-	}
-	.see-more{
-		padding-top: 25vh;
-	}
-	.see-more img{
-		width: 25px;
-	}
+		.flexin{
+			display: flex;
+		}
 
 
 
 
-
-
-/*DESK*/
-	.proj-subA{
-		font-size: 1.2rem;
-	}
-	.proj-subB{
-		font-size: 1.2rem;
-		padding-left: 10px;
-		color: var(--color-lighten);
-		opacity: 0.6;
-	}
-
-	.p-title{
-		color: var(--color-main);
-		font-weight: var(--bold-font);
-		font-size: 4rem;
-		padding: 3rem 0 2rem 0;
-	}
-
-
-
-	.homelink-center{
-		background-color: var(--color-main);
-	}
-	/*PAGES*/
-
-
-	.dist{
-		padding-bottom: 70%;
-		margin-top: -40px;
-	}
-	.caption{
-		margin: -10px 0 .5rem .2rem;
-	}
-
-	.about-pic{
-		margin: 50px;
-	}
-
-	.about-title{
-		font-size: 4rem;
-		margin: 4rem 0 1rem .5rem;
-	}
-	.sect-title{
-		color: var(--color-main);
-		padding: 1rem;
-	}
-	/* .intro-pic{
-		margin: .5rem 0;
-		padding: 1rem;
-	} */
-
-	.special-bg{
-		background-color: var(--color-accent);
-	}
-
-
-	.monocard{
-		height: 500px;
-	}
-
-	.monocard:hover + .hide {
-		margin: -516px 0 1rem 0;
-	}
-	.hide:hover {
-		margin: -516px 0 1rem 0;
-	}
-	.hide {
-		height: 500px;
-	}
-
-	footer p{
-		font-size: 2rem;
-	}
-
-	.footer-link ul{
-		display: block;
-	}
-
-	.p-subs h2{
-		margin-bottom: 2px;
-	}
-}
-/*----DESKTOP--------------------------------------------------------*/
-@media only screen and (min-width: 992px) {
-	.monocard{
-		height: 600px;
-	}
-
-	.monocard:hover + .hide {
-		margin: -616px 0 1rem 0;
-	}
-	.hide:hover {
-		margin: -616px 0 1rem 0;
-	}
-	.hide {
-		height: 600px;
-	}
-
-}

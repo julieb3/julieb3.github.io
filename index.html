@@ -49,7 +49,7 @@
               <div class="portItem">
                 <h1 class="pTitle">The Around You Map</h1>
                 <h2 class="pSub">Masters Thesis Research at <a href="https://cartography.tuwien.ac.at/" target="_blank" rel="noopener noreferrer">TU Wien</a>, 2025</h2>
-                <div class="square" data-message="The Around You Map is an ongoing research project that will be completed in September of 2025. It consists of qualitative design research about the user-experience of a new map format.">
+                <div class="square" data-message="<strong>The Around You Map</strong><br> This is an ongoing research project that will be completed in September of 2025. It consists of qualitative design research about the user-experience of a new map format.">
                   <img src="images/proto_3.jpg" alt="A large cylinder structure hanging a paper map along its walls">
                 </div>
               </div>
@@ -57,7 +57,7 @@
               <div class="portItem">
                 <h1 class="pTitle">Waiting for the Water to Boil—— Sustainable Development Goals Map</h1>
                 <h2 class="pSub">UN Design Challenge with Maddy Noet and Tatiana Pozdnyakova, 2025</h2>
-                <div class="square" data-message="Waiting for the Water to Boil was I made with my group members: Maddy and Tanya for an Atlas design challenge hosted by University of Wisconsin Madison's Cartography group. Our group focused on investigating the lack of data or representation in large datasets of north artic communities or still do not have consistent infastructure or access to clean drinking water.">
+                <div class="square" data-message="<strong>Waiting for the Water to Boil</strong><br> My group members and I created a map for a United Nations Atlas design challenge hosted by University of Wisconsin Madison's Cartography group. Our group focused on investigating the lack of data or representation in large datasets of north artic communities or still do not have consistent infastructure or access to clean drinking water.">
                   <img src="images/atlaspnt.jpg" alt="An open atlas on a hardwood floor">
                 </div>
               </div>
@@ -65,7 +65,7 @@
               <div class="portItem">
                 <h1 class="pTitle">Wien/ Vienna 360°</h1>
                 <h2 class="pSub"><a href="https://cartographymaster.eu/studentwork/wien-360-vienna-360/" target="_blank" rel="noopener noreferrer">Public Map Installation.</a> for EuroCarto, 2024</h2>
-                <div class="square" data-message="Wien/ Vienna 360° is a circular map installation I designed and built, using intentional distortions to create an immersive map of the city. The structure included seating and city information to make it accessible and useful for passersby. It debuted at EuroCarto 2024, with support from organizers, colleagues, and family.">
+                <div class="square" data-message="<strong>Wien/ Vienna 360°</strong><br> For this project I designed and built circular map installation. The aim was to use distortions intentionally to create a more human centred map of the city. The structure included seating and city information to make it accessible and useful for passersby. It debuted at EuroCarto 2024, with support from organizers, colleagues, and family.">
                   <img src="images/v360.jpg" alt="A person walking through a large tube coming out of the ground displaying a map inside">
                 </div>
               </div>
@@ -296,7 +296,7 @@
   document.querySelector('.topics-wrapper').addEventListener('click', (e) => {
     const square = e.target.closest('.square');
     if (square) {
-      popupText.textContent = square.getAttribute('data-message');
+      popupText.innerHTML = square.getAttribute('data-message');
       popup.style.display = 'flex';
     }
   });

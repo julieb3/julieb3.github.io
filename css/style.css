@@ -123,7 +123,10 @@ strong{
 	max-width: 600px;
 }
 .aboutSpot{
-	margin: 20px 0;
+	margin: 18px 0;
+}
+.aboutSpot p{
+	font-size: 20px;
 }
 .academic-box ul{
 	max-width: 800px;
@@ -139,6 +142,7 @@ a{
 .myName{
 	/* padding: 10px; */
 	font-size: 24px;
+	font-weight: 500;
 }
 .myEmail{
 	margin-left: auto;
@@ -146,14 +150,14 @@ a{
 
 .topinfo{
 	color: var(--colMain);
-	display: flex;
+	display: block;
 }
 
 .tagLine{
-	margin: 20px 10px;
+	margin: 20px 0;
 	line-height: 150%;
 	font-weight: var(--bold);
-	font-size: 48px;
+	font-size: 40px;
 	color: var(--colMain);
 }
 .topic.active-topic {
@@ -386,6 +390,34 @@ a{
 			display: flex;
 		}
 
+
+
+		/*----TAB and DESKTOP--------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+	/*BASICS*/
+	.desktop-only {
+		display: block;
+	}
+	.mobile-only {
+		display: none;
+	}
+	.topinfo{
+	color: var(--colMain);
+	display: flex;
+	}
+	.tagLine{
+		font-size: 48px;
+	}
+
+
+  .popup-content {
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 80%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+}
 
 
 

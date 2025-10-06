@@ -87,7 +87,7 @@ body {
 .backcontent{
 	background-image: url('../images/spraypaint.png'); /* path to your image */
 	background-size: cover;       /* image cover the entire div */
-	background-position: center;  /* centers the image */
+ /* centers the image */
 	background-repeat: no-repeat; /* prevents tiling */
 	padding: 50px;                /* optional: add space inside the div */
 	height:auto;
@@ -216,7 +216,7 @@ a{
   .topic-content {
     display: none; /* hidden by default */
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   /* Show the active topic */
@@ -241,13 +241,21 @@ a{
     transition: transform 0.2s, background 0.3s;
   } */
 
-    .square {
+  .square {
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
     display: inline-block;
   }
   .square img {
+    display: block;
+    width: auto;     /* natural size */
+    height: auto;    /* natural size */
+    max-width: 300px; /* optional: limit large images */
+    border-radius: 8px;
+  }
+
+    .special img {
     display: block;
     width: auto;     /* natural size */
     height: auto;    /* natural size */
@@ -354,7 +362,9 @@ a{
 
 
 
-
+		.special img{
+			max-width: 500px;
+		}
 
 
 
@@ -391,9 +401,24 @@ a{
 		}
 
 
+@media only screen and (min-width: 620px) {
+  .square img {
+    max-width: 500px;
+    border-radius: 8px;
+   }
+   .special img {
+    max-width: 500px;
+    border-radius: 8px;
+   }
+
+
+
+
+}
+
 
 		/*----TAB and DESKTOP--------------------------------------------------------*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 	/*BASICS*/
 	.desktop-only {
 		display: block;
@@ -418,7 +443,11 @@ a{
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
    .square img {
-    max-width: 500px; 
+    max-width: 800px;
+    border-radius: 8px;
+   }
+   .special img {
+    max-width: 500px;
     border-radius: 8px;
    }
   

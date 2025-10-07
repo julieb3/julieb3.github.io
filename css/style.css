@@ -245,7 +245,7 @@ a{
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
-    display: inline-block;
+    /* display: inline-block; */
   }
   .square img {
     display: block;
@@ -255,13 +255,6 @@ a{
     border-radius: 8px;
   }
 
-    .special img {
-    display: block;
-    width: auto;     /* natural size */
-    height: auto;    /* natural size */
-    max-width: 300px; /* optional: limit large images */
-    border-radius: 8px;
-  }
   .square:hover {
     transform: scale(1.05);
   }
@@ -362,9 +355,6 @@ a{
 
 
 
-		.special img{
-			max-width: 500px;
-		}
 
 
 
@@ -406,10 +396,7 @@ a{
     max-width: 500px;
     border-radius: 8px;
    }
-   .special img {
-    max-width: 500px;
-    border-radius: 8px;
-   }
+
 
 
 
@@ -446,10 +433,7 @@ a{
     max-width: 800px;
     border-radius: 8px;
    }
-   .special img {
-    max-width: 500px;
-    border-radius: 8px;
-   }
+
   
 }
 

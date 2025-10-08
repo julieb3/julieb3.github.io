@@ -137,6 +137,8 @@ a{
 }
 
 
+
+
 /*----HERO--------------------------------------------------------*/
 
 .myName{
@@ -391,11 +393,19 @@ a{
 		}
 
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 500px) {
   .square img {
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 8px;
    }
+
+  .popup-content {
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 80%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
 
 
 
@@ -405,7 +415,7 @@ a{
 
 
 		/*----TAB and DESKTOP--------------------------------------------------------*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 892px) {
 	/*BASICS*/
 	.desktop-only {
 		display: block;
@@ -433,6 +443,7 @@ a{
     max-width: 800px;
     border-radius: 8px;
    }
+
 
   
 }

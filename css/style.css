@@ -76,7 +76,7 @@ body {
     font-family: var(--myFont);
     margin: 0;
 	color: var(--colMain);
-    background: var(--colBack);
+    /* background: var(--colBack); */
 	line-height: 150%;
 }
 .content{
@@ -85,7 +85,7 @@ body {
 	margin-right: auto;
 }
 .backcontent{
-	background-image: url('../images/spraypaint.png'); /* path to your image */
+	background-image: url('../images/spray7.png'); /* path to your image */
 	background-size: cover;       /* image cover the entire div */
  /* centers the image */
 	background-repeat: no-repeat; /* prevents tiling */

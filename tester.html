@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- p5.js (latest from jsdelivr) -->
+  <script src="https://cdn.jsdelivr.net/npm/p5/lib/p5.min.js"></script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: #e6e6e6;
+    }
+
+    #overlay {
+      position: absolute;
+      z-index: 10;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none; /* let clicks pass to canvas if you want */
+      font-size: 22px;
+      color: #222;
+    }
+
+    /* canvas will be inserted into the container */
+    .container canvas {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      z-index: 1 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="myContainer">
+    <div id="overlay">Particles running behind this text — click anywhere to toggle color cycle</div>
+  </div>
+
+  <script>
+    // ---- Your translated Processing code (global p5 mode) ----
+    let particles = [];
+    let cycle = true;
+
+    function setup() {
+      const container = document.getElementById('myContainer');
+      // create canvas sized to the container
+      const cnv = createCanvas(container.offsetWidth, container.offsetHeight);
+      cnv.parent('myContainer');
+
+      noStroke();
+      rectMode(CENTER);
+    }
+
+    function windowResized() {
+      const container = document.getElementById('myContainer');
+      resizeCanvas(container.offsetWidth, container.offsetHeight);
+    }
+
+    function draw() {
+      background(230, 230, 230);
+
+      // continually add new particles
+      particles.push(new Particle());
+
+      // iterate backwards when removing items
+      for (let i = particles.length - 1; i >= 0; i--) {
+        particles[i].display();
+        particles[i].move();
+        if (!particles[i].isAlive()) {
+          particles.splice(i, 1);
+        }
+      }
+    }
+
+    function mouseClicked() {
+      cycle = !cycle;
+    }
+
+    class Particle {
+      constructor() {
+        this.velocity = createVector(random(-1, 1), random(-1, 1));
+        this.location = createVector(random(0, width), random(0, height));
+        this.size = 20;
+        this.steps = 0;
+        this.alive = true;
+        this.LIFETIME = random(10, 600);
+      }
+
+      move() {
+        this.location.add(this.velocity);
+        this.steps++;
+        if (this.steps > this.LIFETIME) {
+          this.alive = false;
+        }
+      }
+
+      display() {
+        push();
+        translate(this.location.x, this.location.y);
+
+        if (cycle) {
+          fill(80, 75, 232, map(this.steps, 0, this.LIFETIME, 200, 0));
+        } else {
+          fill(254, 255, 193, map(this.steps, 0, this.LIFETIME, 200, 0));
+        }
+
+        noStroke();
+        scale(map(this.steps, 0, this.LIFETIME, 0, 2));
+        ellipse(0, 0, this.size, this.size);
+        pop();
+      }
+
+      isAlive() {
+        return this.alive;
+      }
+    }
+  </script>
+</body>
+</html>
